@@ -1,0 +1,93 @@
+.header {
+  background-color: #0b3c49;
+  display: flex;
+  align-items: center; }
+  .header__img {
+    width: 8rem;
+    padding-left: 3rem; }
+  .header__search {
+    border: 0.1rem solid #22BFA0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    width: 15rem;
+    height: 1.5rem;
+    margin-left: auto;
+    margin-right: 4rem;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1rem; }
+
+.main {
+  background-color: #e0e0e0; }
+  .main__events {
+    width: 100%; }
+  .main__h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #22BFA0;
+    padding-top: 2rem; }
+  .main__p {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1.5rem; }
+  .main__list {
+    padding-top: 3rem;
+    text-align: center; }
+  .main__list-iten {
+    width: 40%;
+    height: 25%;
+    border: 0.1rem solid #0b3c49;
+    border-radius: 1%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin: 1.5rem; }
+  .main .event__img {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 1rem; }
+  .main .event__date {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    color: #0b3c49; }
+  .main .event__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    color: #22BFA0; }
+  .main .event__price-full {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    color: #0b3c49; }
+  .main .event__price-half {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    color: #0b3c49;
+    font-size: 1.2rem;
+    padding: 0.5rem; }
+  .main .event__location {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    color: #5c5a5a;
+    padding: 0.5rem; }
+  .main .event__form {
+    padding: 1rem; }
+  .main .event__quantity-tickets {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    color: #0b3c49; }
+  .main .event__tickets-select {
+    margin-right: 1.5rem;
+    height: 2.5rem;
+    width: 4rem;
+    font-size: 1rem;
+    color: #5c5a5a;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

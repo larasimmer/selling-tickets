@@ -3,27 +3,34 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 		<title>Awesome tickets</title>
 	</head>
     <body>
-        <header>
-            <img src="img/logotipo.png" alt="Logotipo da Awesome tickets">
-            <input type="text" placeholder="Pesquisar eventos...">
+        <header class="header">
+            <img src="img/logotipo.png" alt="Logotipo da Awesome tickets" class="header__img">
+            <input type="text" placeholder="Pesquisar eventos..." class="header__search">
         </header>
-        <main>
-            <section>
-            <h1>São Paulo</h1>
-            <ul>
-                <li>
-                    <img src="img/angra.jpg" alt="Show da banda Angra">
-                    <h5>Sex, 17/12/2021, 21:00</h5>
-                    <h4>Angra Ømni Tour</h4>
-                    <h5>Inteira: R$ 120,00</h5>
-                    <h5>Meia: R$ 60,00</h5>
-                    <h6>Allianz Parque - São Paulo, SP</h6>
-                    <form>
-                        <label for="inteira">Ingressos de preço cheio:</label>
-                        <select id="inteira" name="inteira">
+        <main class="main">
+            <section class="main__events">
+            <h1 class="main__h1">São Paulo</h1>
+            <p class="main__p">Encontre os melhores eventos perto de você!</p>
+            <ul class="main__list">
+                <li class="main__list-iten event">
+                    <img src="img/angra.jpg" alt="Show da banda Angra" class="event__img">
+                    <h5 class="event__date">Sex, 17/12/2021, 21:00</h5>
+                    <h4 class="event__title">Angra Ømni Tour</h4>
+                    <h5 class="event__price-full">Inteira: R$ 120,00</h5>
+                    <h5 class="event__price-half">Meia: R$ 60,00</h5>
+                    <h6 class="event__location">Allianz Parque - São Paulo, SP</h6>
+                    <form class="event__form">
+                        <label for="inteira" class="event__quantity-tickets">Ingressos de preço cheio:</label>
+                        <select class ="event__tickets-select" id="inteira" name="inteira">
                           <option value="1">1</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
@@ -31,36 +38,9 @@
                           <option value="5">5</option>
                           <option value="6">6</option>
                         </select>
-                        <label for="meia">Ingressos meia-entrada:</label>
-                        <select id="meia" name="meia">
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                        </select>
-                      </form>
-                </li>
-                <li>
-                    <img src="img/lana del rey.jpg" alt="Show da cantora Lana del Rey">
-                    <h5>Sab, 18/12/2021, 19:00</h5>
-                    <h4>Lana del Rey: The endless summer tour</h4>
-                    <h5>Inteira: R$ 150,00</h5>
-                    <h5>Meia: R$ 75,00</h5>
-                    <h6>Espaço das Américas - São Paulo, SP</h6>
-                    <form>
-                        <label for="inteira">Ingressos de preço cheio:</label>
-                        <select id="inteira" name="inteira">
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                        </select>
-                        <label for="meia">Ingressos meia-entrada:</label>
-                        <select id="meia" name="meia">
+                      <form class="event__form">
+                        <label for="meia" class="event__quantity-tickets">Ingressos meia-entrada:</label>
+                        <select class ="event__tickets-select" id="meia" name="meia">
                           <option value="1">1</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
@@ -70,117 +50,150 @@
                         </select>
                       </form>
                 </li>
-                <li>
-                    <img src="img/ozzy.jpg" alt="Show do cantor Ozzy Osbourne">
-                    <h5>Sab, 01/01/2022, 22:00</h5>
-                    <h4>Ozzy Osbourne: The prince of darkness...Live!</h4>
-                    <h5>Inteira: R$ 220,00</h5>
-                    <h5>Meia: R$ 110,00</h5>
-                    <h6>Credicard Hall - São Paulo, SP</h6>
-                    <form>
-                        <label for="inteira">Ingressos de preço cheio:</label>
-                        <select id="inteira" name="inteira">
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                        </select>
-                        <label for="meia">Ingressos meia-entrada:</label>
-                        <select id="meia" name="meia">
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                        </select>
-                      </form>
+                <li class="main__list-iten iten">
+                    <img src="img/lana del rey.jpg" alt="Show da cantora Lana del Rey" class="event__img">
+                    <h5 class="event__date">Sab, 18/12/2021, 19:00</h5>
+                    <h4 class="event__title">Lana del Rey: The endless summer tour</h4>
+                    <h5 class="event__price-full">Inteira: R$ 150,00</h5>
+                    <h5 class="event__price-half">Meia: R$ 75,00</h5>
+                    <h6 class="event__location">Espaço das Américas - São Paulo, SP</h6>
+                    <form class="event__form">
+                      <label for="inteira" class="event__quantity-tickets">Ingressos de preço cheio:</label>
+                      <select class ="event__tickets-select" id="inteira" name="inteira">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                      </select>
+                    <form class="event__form">
+                      <label for="meia" class="event__quantity-tickets">Ingressos meia-entrada:</label>
+                      <select class ="event__tickets-select" id="meia" name="meia">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                      </select>
+                    </form>
                 </li>
-                <li>
-                    <img src="img/beyonce.jpg" alt="Show da cantora Beyoncé">
-                    <h5>Sab, 08/01/2022, 23:00</h5>
-                    <h4>Beyoncé: OTR II Tour</h4>
-                    <h5>Inteira: R$ 300,00</h5>
-                    <h5>Meia: R$ 150,00</h5>
-                    <h6>Autódromo Interlagos - São Paulo, SP</h6>
-                    <form>
-                        <label for="inteira">Ingressos de preço cheio:</label>
-                        <select id="inteira" name="inteira">
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                        </select>
-                        <label for="meia">Ingressos meia-entrada:</label>
-                        <select id="meia" name="meia">
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                        </select>
-                      </form>
+                <li class="main__list-iten iten">
+                    <img src="img/ozzy.jpg" alt="Show do cantor Ozzy Osbourne" class="event__img">
+                    <h5 class="event__date">Sab, 01/01/2022, 22:00</h5>
+                    <h4 class="event__title">Ozzy Osbourne: The prince of darkness...Live!</h4>
+                    <h5 class="event__price-full">Inteira: R$ 220,00</h5>
+                    <h5 class="event__price-half">Meia: R$ 110,00</h5>
+                    <h6 class="event__location">Credicard Hall - São Paulo, SP</h6>
+                    <form class="event__form">
+                      <label for="inteira" class="event__quantity-tickets">Ingressos de preço cheio:</label>
+                      <select class ="event__tickets-select" id="inteira" name="inteira">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                      </select>
+                    <form class="event__form">
+                      <label for="meia" class="event__quantity-tickets">Ingressos meia-entrada:</label>
+                      <select class ="event__tickets-select" id="meia" name="meia">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                      </select>
+                    </form>
                 </li>
-                <li>
-                    <img src="img/the weeknd.jpg" alt="Show do cantor The Weeknd">
-                    <h5>Sex, 14/01/2022, 23:00</h5>
-                    <h4>The Weeknd: The fall Tour</h4>
-                    <h5>Inteira: R$ 280,00</h5>
-                    <h5>Meia: R$ 140,00</h5>
-                    <h6>Autódromo Interlagos - São Paulo, SP</h6>
-                    <form>
-                        <label for="inteira">Ingressos de preço cheio:</label>
-                        <select id="inteira" name="inteira">
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                        </select>
-                        <label for="meia">Ingressos meia-entrada:</label>
-                        <select id="meia" name="meia">
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                        </select>
-                      </form>
+                <li class="main__list-iten iten">
+                    <img src="img/beyonce.jpg" alt="Show da cantora Beyoncé" class="event__img">
+                    <h5 class="event__date">Sab, 08/01/2022, 23:00</h5>
+                    <h4 class="event__title">Beyoncé: OTR II Tour</h4>
+                    <h5 class="event__price-full">Inteira: R$ 300,00</h5>
+                    <h5 class="event__price-half">Meia: R$ 150,00</h5>
+                    <h6 class="event__location">Autódromo Interlagos - São Paulo, SP</h6>
+                    <form class="event__form">
+                      <label for="inteira" class="event__quantity-tickets">Ingressos de preço cheio:</label>
+                      <select class ="event__tickets-select" id="inteira" name="inteira">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                      </select>
+                    <form class="event__form">
+                      <label for="meia" class="event__quantity-tickets">Ingressos meia-entrada:</label>
+                      <select class ="event__tickets-select" id="meia" name="meia">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                      </select>
+                    </form>
                 </li>
-                <li>
-                    <img src="img/rammstein.jpg" alt="Show da banda Rammstein">
-                    <h5>Sab, 15/01/2022, 22:00</h5>
-                    <h4>Rmmstein: Mutter Tour</h4>
-                    <h5>Inteira: R$ 250,00</h5>
-                    <h5>Meia: R$ 125,00</h5>
-                    <h6>Allianz Parque - São Paulo, SP</h6>
-                    <form>
-                        <label for="inteira">Ingressos de preço cheio:</label>
-                        <select id="inteira" name="inteira">
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                        </select>
-                        <label for="meia">Ingressos meia-entrada:</label>
-                        <select id="meia" name="meia">
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
-                          <option value="4">4</option>
-                          <option value="5">5</option>
-                          <option value="6">6</option>
-                        </select>
-                      </form>
+                <li class="main__list-iten iten">
+                    <img src="img/the weeknd.jpg" alt="Show do cantor The Weeknd" class="event__img">
+                    <h5 class="event__date">Sex, 14/01/2022, 23:00</h5>
+                    <h4 class="event__title">The Weeknd: The fall Tour</h4>
+                    <h5 class="event__price-full">Inteira: R$ 280,00</h5>
+                    <h5 class="event__price-half">Meia: R$ 140,00</h5>
+                    <h6 class="event__location">Autódromo Interlagos - São Paulo, SP</h6>
+                    <form class="event__form">
+                      <label for="inteira" class="event__quantity-tickets">Ingressos de preço cheio:</label>
+                      <select class ="event__tickets-select" id="inteira" name="inteira">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                      </select>
+                    <form class="event__form">
+                      <label for="meia" class="event__quantity-tickets">Ingressos meia-entrada:</label>
+                      <select class ="event__tickets-select" id="meia" name="meia">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                      </select>
+                    </form>
+                </li>
+                <li class="main__list-iten iten">
+                    <img src="img/rammstein.jpg" alt="Show da banda Rammstein" class="event__img">
+                    <h5 class="event__date">Sab, 15/01/2022, 22:00</h5>
+                    <h4 class="event__title">Rmmstein: Mutter Tour</h4>
+                    <h5 class="event__price-full">Inteira: R$ 250,00</h5>
+                    <h5 class="event__price-half">Meia: R$ 125,00</h5>
+                    <h6 class="event__location">Allianz Parque - São Paulo, SP</h6>
+                    <form class="event__form">
+                      <label for="inteira" class="event__quantity-tickets">Ingressos de preço cheio:</label>
+                      <select class ="event__tickets-select" id="inteira" name="inteira">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                      </select>
+                    <form class="event__form">
+                      <label for="meia" class="event__quantity-tickets">Ingressos meia-entrada:</label>
+                      <select class ="event__tickets-select" id="meia" name="meia">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                      </select>
+                    </form>
                 </li>
             </ul>
             <div>
