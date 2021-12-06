@@ -90,6 +90,10 @@
     font-weight: bold;
     text-align: center; }
 
+.summary {
+  background-color: white;
+  padding: 1rem; }
+
 .footer {
   background-color: #5c5a5a;
   height: 5rem;
