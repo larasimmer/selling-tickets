@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Awesome tickets</title>
+	</head>
+    <body>
+        <header>
+            <img src="img/logotipo.png" alt="Logotipo da Awesome tickets">
+        </header>
+        <main>
+            <section>
+                <h2>Resumo da compra</h2>
+                <ul>
+                    <li>
+                    <h3>[Nome do evento]</h3>
+                    <h5>[Data e horário do evento]</h5>
+                    <h5>[Local do evento]</h5>
+                    </li>
+                </ul>
+                <h3>Total: [total da compra]</h3>
+            </section>
+            <form>
+                <h3>Informações de pagamento</h3>
+                <p>Selecione a forma de pagamento</p>
+                <input type="radio" id="visa" name="visa" value="visa">
+                <label for="visa"><i class="fab fa-cc-visa"></i></label><br>
+
+                <input type="radio" id="mastercard" name="mastercard" value="mastercard">
+                <label for="mastercard"><i class="fab fa-cc-mastercard"></i></label><br>
+
+                <input type="radio" id="americanexpress" name="americanexpress" value="americanexpress">
+                <label for="americanexpress"><i class="fab fa-cc-amex"></i></label><br>
+
+                <input type="radio" id="dinersclub" name="dinersclub" value="dinersclub">
+                <label for="dinersclub"><i class="fab fa-cc-diners-club"></i></label><br>
+
+                <label for="numero-cartao">Número do cartão:</label><br>
+                <input type="text" id="numero-cartao" name="numero-cartao"><br>
+
+                <label for="mes-validade">Mês de validade do cartão:</label>
+                <select id="mes-validade" name="mes-validade">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select><br>
+
+                <label for="ano-validade">Ano de validade do cartão:</label><br>
+                <input type="text" id="ano-validade" name="ano-validade"><br>
+
+                <label for="código-seguranca">Código de segurança:</label><br>
+                <input type="text" id="código-seguranca" name="código-seguranca"><br>
+
+                <h3>Dados do titular do cartão</h3>
+
+                <label for="nome-titular">Nome do titular (como impresso no cartão):</label><br>
+                <input type="text" id="nome-titular" name="nome-titular"><br>
+
+                <label for="data-nascimento">Data de nascimento:</label>
+                <input type="date" id="data-nascimento" name="data-nascimento"><br>
+
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf"><br>
+
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" name="phone"><br>
+
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep"><br>
+
+                <label for="logradouro">Logradouro:</label>
+                <input type="text" id="logradouro" name="logradouro"><br>
+
+                <label for="numero">Número:</label>
+                <input type="text" id="numero" name="numero"><br>
+
+                <label for="complemento">Complemento:</label>
+                <input type="text" id="complemento" name="complemento"><br>
+                
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro"><br>
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade"><br>
+
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado">
+                    <option value="acre">Acre</option>
+                    <option value="alagoas">Alagoas</option>
+                    <option value="amapa">Amapá</option>
+                    <option value="amazonas">Amazonas</option>
+                    <option value="bahia">Bahia</option>
+                    <option value="ceara">Ceará</option>
+                    <option value="distrito federal">Distrito Federal</option>
+                    <option value="espirito santo">Espírito Santo</option>
+                    <option value="goias">Goiás</option>
+                    <option value="maranhao">Maranhão</option>
+                    <option value="mato grosso">Mato Grosso</option>
+                    <option value="mato grosso do sul">Mato Grosso do Sul</option>
+                    <option value="minas gerais">Minas Gerais</option>
+                    <option value="para">Pará</option>
+                    <option value="paraiba">Paraíba</option>
+                    <option value="parana">Paraná</option>
+                    <option value="pernambuco">Pernambuco</option>
+                    <option value="piaui">Piauí</option>
+                    <option value="rio de janeiro">Rio de Janeiro</option>
+                    <option value="rio grande do norte">Rio Grande do Norte</option>
+                    <option value="rio grande do sul">Rio Grande do Sul</option>
+                    <option value="rondonia">Rondônia</option>
+                    <option value="roraima">Roraima</option>
+                    <option value="santa catarina">Santa Catarina</option>
+                    <option value="sao paulo">São Paulo</option>
+                    <option value="sergipe">Sergipe</option>
+                    <option value="tocantins">Tocantins</option>
+                </select><br>
+
+            </form>
+
+            <button>Finalizar compra</button>
+            <button>Cancelar</button>
+            <button>Voltar</button>
+        </main>
+        <footer>
+            <p>Contato: contato@awesometickets.com.br</p>
+        </footer>
+    </body>
+    </html>
