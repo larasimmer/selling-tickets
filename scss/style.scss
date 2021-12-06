@@ -2,6 +2,7 @@ $darkblue: #0b3c49;
 $green: #22BFA0;
 $darkgrey: #5c5a5a;
 $lightgrey: #e0e0e0;
+$cor-branca: white;
 $fonte-principal: 'Montserrat', sans-serif;
 $fonte-secundaria: 'Ubuntu', sans-serif;
 
@@ -130,5 +131,20 @@ $fonte-secundaria: 'Ubuntu', sans-serif;
             font-weight: bold;
             text-align: center;
         }
+    }
+}
+
+.footer {
+    background-color: $darkgrey;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__p {
+        color: $cor-branca;
+        font-family: $fonte-principal;
+        font-size: 1rem;
+        font-weight: bold;
     }
 }
