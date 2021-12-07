@@ -92,7 +92,50 @@
 
 .summary {
   background-color: white;
-  padding: 1rem; }
+  padding: 1rem;
+  padding-right: 3rem;
+  text-align: end; }
+  .summary__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+    color: #22BFA0; }
+  .summary__box {
+    border: 0.1rem solid #0b3c49;
+    margin-bottom: 1rem;
+    width: 40%;
+    margin-left: auto; }
+  .summary__list {
+    padding: 1.0rem; }
+  .summary__list-iten {
+    padding-bottom: 0.5rem;
+    color: #5c5a5a;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    text-align: start; }
+  .summary__total {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #0b3c49;
+    padding-bottom: 1rem; }
+  .summary__button {
+    background-color: #22BFA0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #0b3c49;
+    border: 0.1rem solid #0b3c49;
+    border-radius: 5%;
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold; }
+    .summary__button:hover {
+      background-color: #0b3c49;
+      color: #22BFA0;
+      border: 0.1rem solid #22BFA0; }
 
 .footer {
   background-color: #5c5a5a;
