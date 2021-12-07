@@ -128,14 +128,14 @@
     padding-bottom: 0.5rem;
     color: #0b3c49;
     border: 0.1rem solid #0b3c49;
-    border-radius: 5%;
     font-size: 1.2rem;
     font-family: "Montserrat", sans-serif;
     font-weight: bold; }
     .summary__button:hover {
       background-color: #0b3c49;
       color: #22BFA0;
-      border: 0.1rem solid #22BFA0; }
+      border: 0.1rem solid #22BFA0;
+      cursor: pointer; }
 
 .footer {
   background-color: #5c5a5a;
@@ -148,5 +148,20 @@
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     font-weight: bold; }
+
+.form {
+  width: 100%;
+  padding-left: 2rem; }
+  .form__title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    color: #22BFA0;
+    padding-top: 2rem;
+    padding-bottom: 2rem; }
+  .form__iten {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    color: #0b3c49;
+    font-size: 1.2rem; }
 
 /*# sourceMappingURL=style.css.map */
