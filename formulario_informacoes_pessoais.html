@@ -17,23 +17,29 @@
             <input type="text" placeholder="Pesquisar eventos..." class="header__search">
         </header>
         <main>
+            <a href="index.html"><button class="go-back-button">Voltar</button></a>
             <form class="form">
                 <h3 class="form__title">Informações pessoais</h3>
-
-                <label class="form__iten" for="primeiro-nome">Primeiro nome:</label>
-                <input class="form__field" type="text" id="primeiro-nome" name="primeiro-nome"><br>
-
-                <label class="form__iten" for="ultimo-nome">Último nome:</label>
-                <input class="form__field" type="text" id="ultimo-nome" name="ultimo-nome"><br>
-
-                <label class="form__iten" for="email">E-mail:</label>
-                <input class="form__field" type="email" id="email" name="email"><br>
-
-                <label class="form__iten" for="senha">Cadastre uma senha:</label>
-                <input class="form__field" type="password" id="senha" name="senha"><br>
-
-                <label class="form__iten" for="confirmar-senha">Confirmar senha:</label>
-                <input class="form__field" type="password" id="confirmar-senha" name="confirmar-senha"><br>
+                <div class="form__iten">
+                    <label for="primeiro-nome">Primeiro nome:</label>
+                    <input class="form__field-long" type="text" id="primeiro-nome" name="primeiro-nome"><br>
+                </div>
+                <div class="form__iten">
+                    <label for="ultimo-nome">Último nome:</label>
+                    <input class="form__field-long" type="text" id="ultimo-nome" name="ultimo-nome"><br>
+                </div>
+                <div class="form__iten">
+                    <label for="email">E-mail:</label>
+                    <input class="form__field-long" type="email" id="email" name="email"><br>
+                </div>
+                <div class="form__iten">
+                    <label for="senha">Cadastre uma senha:</label>
+                    <input class="form__field-long" type="password" id="senha" name="senha"><br>
+                </div>
+                <div class="form__iten">
+                    <label for="confirmar-senha">Confirmar senha:</label>
+                    <input class="form__field-long" type="password" id="confirmar-senha" name="confirmar-senha"><br>
+                </div>
             </form>
             <section class="summary">
                 <h3 class="summary__title">Resumo da compra</h3>
@@ -49,7 +55,6 @@
                 <h3 class="summary__total">Total: [total da compra]</h3>
                 <a href="formulario_pagamento.html"><button class="summary__button">Avançar para o pagamento</button></a>
             </section>
-            <a href="index.html"><button>Voltar</button></a>
         </main>
         <footer class="footer">
             <p class="footer__p">Contato: contato@awesometickets.com.br</p>

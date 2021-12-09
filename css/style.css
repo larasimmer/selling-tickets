@@ -162,6 +162,30 @@
     font-family: "Ubuntu", sans-serif;
     font-weight: bold;
     color: #0b3c49;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    padding: 1.2rem; }
+  .form__field-long {
+    margin-left: 1rem;
+    padding: 0.5rem;
+    width: 30rem; }
+
+.go-back-button {
+  background-color: #0b3c49;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: #22BFA0;
+  border: 0.1rem solid #22BFA0;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-left: 1.5rem; }
+  .go-back-button:hover {
+    background-color: #22BFA0;
+    color: #0b3c49;
+    border: 0.1rem solid #0b3c49;
+    cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
