@@ -168,6 +168,23 @@
     margin-left: 1rem;
     padding: 0.5rem;
     width: 30rem; }
+  .form__field-medium {
+    margin-left: 1rem;
+    padding: 0.5rem;
+    width: 15rem; }
+  .form__field-short {
+    margin-left: 1rem;
+    padding: 0.5rem;
+    width: 5rem; }
+
+.card {
+  padding: 0.3rem; }
+  .card__select {
+    width: 1rem;
+    vertical-align: baseline; }
+
+.fab {
+  font-size: 2.5rem; }
 
 .go-back-button {
   background-color: #0b3c49;
@@ -187,5 +204,25 @@
     color: #0b3c49;
     border: 0.1rem solid #0b3c49;
     cursor: pointer; }
+
+.cancel-button {
+  background-color: darkred;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: white;
+  border: 0.1rem solid #5c5a5a;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-right: 1.5rem; }
+  .cancel-button:hover {
+    background-color: red;
+    cursor: pointer; }
+
+.inline-block {
+  display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */

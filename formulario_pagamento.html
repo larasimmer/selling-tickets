@@ -22,25 +22,30 @@
                 <h3 class="form__title">Informações de pagamento</h3>
                 <div class="form__iten">
                     <p>Selecione a forma de pagamento:</p>
-                    <input type="radio" id="visa" name="visa" value="visa">
-                    <label for="visa"><i class="fab fa-cc-visa"></i></label><br>
-
-                    <input type="radio" id="mastercard" name="mastercard" value="mastercard">
-                    <label for="mastercard"><i class="fab fa-cc-mastercard"></i></label><br>
-
-                    <input type="radio" id="americanexpress" name="americanexpress" value="americanexpress">
-                    <label for="americanexpress"><i class="fab fa-cc-amex"></i></label><br>
-
-                    <input type="radio" id="dinersclub" name="dinersclub" value="dinersclub">
-                    <label for="dinersclub"><i class="fab fa-cc-diners-club"></i></label><br>
+                    <div class= "card">
+                        <input class="card__select" type="radio" id="visa" name="visa" value="visa">
+                        <label for="visa"><i class="fab fa-cc-visa"></i></label><br>
+                    </div>
+                    <div class= "card">
+                        <input class="card__select" type="radio" id="mastercard" name="mastercard" value="mastercard">
+                        <label for="mastercard"><i class="fab fa-cc-mastercard"></i></label><br>
+                    </div>
+                    <div class= "card">
+                        <input class="card__select" type="radio" id="americanexpress" name="americanexpress" value="americanexpress">
+                        <label for="americanexpress"><i class="fab fa-cc-amex"></i></label><br>
+                    </div>
+                    <div class= "card">
+                        <input class="card__select" type="radio" id="dinersclub" name="dinersclub" value="dinersclub">
+                        <label for="dinersclub"><i class="fab fa-cc-diners-club"></i></label><br>
+                    </div>
                 </div>
                 <div class="form__iten">
                     <label for="numero-cartao">Número do cartão:</label>
-                    <input class="form__field" type="text" id="numero-cartao" name="numero-cartao"><br>
+                    <input class="form__field-long" type="text" id="numero-cartao" name="numero-cartao"><br>
                 </div>
-                <div class="form__iten">
+                <div class="form__iten inline-block">
                     <label for="mes-validade">Mês de validade do cartão:</label>
-                    <select id="mes-validade" name="mes-validade">
+                    <select class="form__field-short" id="mes-validade" name="mes-validade">
                         <option value="01">01</option>
                         <option value="02">02</option>
                         <option value="03">03</option>
@@ -55,58 +60,58 @@
                         <option value="12">12</option>
                     </select><br>
                 </div>
-                <div class="form__iten">
+                <div class="form__iten inline-block">
                     <label for="ano-validade">Ano de validade do cartão:</label>
-                    <input type="text" id="ano-validade" name="ano-validade"><br>
+                    <input class="form__field-short" type="text" id="ano-validade" name="ano-validade"><br>
                 </div>
                 <div class="form__iten">
                     <label for="código-seguranca">Código de segurança:</label>
-                    <input type="text" id="código-seguranca" name="código-seguranca"><br>
+                    <input class="form__field-short" type="text" id="código-seguranca" name="código-seguranca"><br>
                 </div>
                 <h3 class="form__title">Dados do titular do cartão</h3>
                 <div class="form__iten">
                     <label for="nome-titular">Nome do titular (como impresso no cartão):</label>
-                    <input class="form__field" type="text" id="nome-titular" name="nome-titular"><br>
+                    <input class="form__field-long" type="text" id="nome-titular" name="nome-titular"><br>
                 </div>
-                <div class="form__iten">
+                <div class="form__iten inline-block">
                     <label for="data-nascimento">Data de nascimento:</label>
-                    <input type="date" id="data-nascimento" name="data-nascimento"><br>
+                    <input class="form__field-medium" type="date" id="data-nascimento" name="data-nascimento"><br>
                 </div>
-                <div class="form__iten">
+                <div class="form__iten inline-block">
                     <label for="cpf">CPF:</label>
-                    <input type="text" id="cpf" name="cpf"><br>
+                    <input class="form__field-medium" type="text" id="cpf" name="cpf"><br>
                 </div>
                 <div class="form__iten">
                     <label for="phone">Telefone:</label>
-                    <input type="tel" id="phone" name="phone"><br>
+                    <input class="form__field-medium" type="tel" id="phone" name="phone"><br>
                 </div>
                 <div class="form__iten">
                     <label for="cep">CEP:</label>
-                    <input type="text" id="cep" name="cep"><br>
+                    <input class="form__field-medium" type="text" id="cep" name="cep"><br>
                 </div>
-                <div class="form__iten">
+                <div class="form__iten inline-block">
                     <label for="logradouro">Logradouro:</label>
-                    <input class="form__field" type="text" id="logradouro" name="logradouro"><br>
+                    <input class="form__field-long" type="text" id="logradouro" name="logradouro"><br>
                 </div>
-                <div class="form__iten">
+                <div class="form__iten inline-block">
                     <label for="numero">Número:</label>
-                    <input type="text" id="numero" name="numero"><br>
+                    <input class="form__field-short" type="text" id="numero" name="numero"><br>
                 </div>
                 <div class="form__iten">
                     <label for="complemento">Complemento:</label>
-                    <input class="form__field" type="text" id="complemento" name="complemento"><br>
+                    <input class="form__field-long" type="text" id="complemento" name="complemento"><br>
                 </div>
-                <div class="form__iten">
+                <div class="form__iten inline-block">
                     <label for="bairro">Bairro:</label>
-                    <input class="form__field" type="text" id="bairro" name="bairro"><br>
+                    <input class="form__field-medium" type="text" id="bairro" name="bairro"><br>
                 </div>
-                <div class="form__iten">
+                <div class="form__iten inline-block">
                     <label for="cidade">Cidade:</label>
-                    <input class="form__field" type="text" id="cidade" name="cidade"><br>
+                    <input class="form__field-medium" type="text" id="cidade" name="cidade"><br>
                 </div>
                 <div class="form__iten">
                     <label for="estado">Estado:</label>
-                    <select id="estado" name="estado">
+                    <select class="form__field-medium" id="estado" name="estado">
                         <option value="acre">Acre</option>
                         <option value="alagoas">Alagoas</option>
                         <option value="amapa">Amapá</option>

@@ -235,6 +235,31 @@ $fonte-secundaria: 'Ubuntu', sans-serif;
         padding: 0.5rem;
         width: 30rem;;
     }
+
+    &__field-medium {
+        margin-left: 1rem;
+        padding: 0.5rem;
+        width: 15rem;;
+    }
+
+    &__field-short {
+        margin-left: 1rem;
+        padding: 0.5rem;
+        width: 5rem;;
+    }
+}
+
+.card {
+    padding: 0.3rem;
+
+    &__select {
+        width: 1rem;
+        vertical-align: baseline;
+    }
+}
+
+.fab {
+    font-size: 2.5rem;
 }
 
 .go-back-button {
@@ -257,4 +282,28 @@ $fonte-secundaria: 'Ubuntu', sans-serif;
             border: 0.1rem solid $darkblue;
             cursor: pointer;
         }
+}
+
+.cancel-button {
+    background-color: darkred;
+    padding-left: 1rem;
+    padding-right:1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: $cor-branca;
+    border: 0.1rem solid $darkgrey;
+    font-size: 1.2rem;
+    font-family: $fonte-principal;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-right: 1.5rem;;
+
+        &:hover {
+            background-color: red;
+            cursor: pointer;
+        }
+}
+
+.inline-block {
+    display: inline-block;
 }
