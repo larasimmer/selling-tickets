@@ -169,13 +169,13 @@
                 <li class="main__list-iten iten">
                     <img src="img/rammstein.jpg" alt="Show da banda Rammstein" class="event__img">
                     <h5 class="event__date">Sab, 15/01/2022, 22:00</h5>
-                    <h4 class="event__title">Rmmstein: Mutter Tour</h4>
+                    <h4 class="event__title">Rammstein: Mutter Tour</h4>
                     <h5 class="event__price-full">Inteira: R$ 250,00</h5>
                     <h5 class="event__price-half">Meia: R$ 125,00</h5>
                     <h6 class="event__location">Allianz Parque - São Paulo, SP</h6>
                     <form class="event__form">
                       <label for="inteira" class="event__quantity-tickets">Ingressos de preço cheio:</label>
-                      <select class ="event__tickets-select" id="inteira" name="inteira">
+                      <select class="event__tickets-select" id="inteira" name="inteira">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -200,8 +200,8 @@
                 <h3 class="summary__title">Resumo da compra</h3>
                 <div class="summary__box">
                   <ul class="summary__list">
-                      <li class="summary__list-iten"><p>[Quantidade] ingressos inteiros de [Evento]</p></li>
-                      <li class="summary__list-iten"><p>[Quantidade] ingressos meia-entrada de [Evento]</p></li>
+                      <li class="summary__list-iten"><p id="quantidade-ingressos-inteiros">[Quantidade] ingressos inteiros de [Evento]</p></li>
+                      <li class="summary__list-iten"><p id="quantidade-ingressos-meia">[Quantidade] ingressos meia-entrada de [Evento]</p></li>
                   </ul>
                 </div>
                 <h4 class="summary__total">Total: [total]</h4>
@@ -212,5 +212,6 @@
         <footer class="footer">
             <p class="footer__p">Contato: contato@awesometickets.com.br</p>
         </footer>
+        <script src="js/index.js"></script>
     </body>
     </html>
