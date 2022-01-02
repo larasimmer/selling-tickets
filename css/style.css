@@ -120,23 +120,6 @@
     font-weight: bold;
     color: #0b3c49;
     padding-bottom: 1rem; }
-  .resumo__botao {
-    background-color: #22BFA0;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    color: #0b3c49;
-    border: 0.1rem solid #0b3c49;
-    font-size: 1.2rem;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    margin-bottom: 4rem; }
-    .resumo__botao:hover {
-      background-color: #0b3c49;
-      color: #22BFA0;
-      border: 0.1rem solid #22BFA0;
-      cursor: pointer; }
 
 .footer {
   background-color: #5c5a5a;
@@ -149,25 +132,6 @@
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     font-weight: bold; }
-
-.botao-voltar {
-  background-color: #0b3c49;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  color: #22BFA0;
-  border: 0.1rem solid #22BFA0;
-  font-size: 1.2rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  margin-top: 1rem;
-  margin-left: 1.5rem; }
-  .botao-voltar:hover {
-    background-color: #22BFA0;
-    color: #0b3c49;
-    border: 0.1rem solid #0b3c49;
-    cursor: pointer; }
 
 .form {
   width: 100%;
@@ -223,6 +187,28 @@
 .fab {
   font-size: 2.5rem; }
 
+.inline-block {
+  display: inline-block; }
+
+.botao-voltar {
+  background-color: #0b3c49;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: #22BFA0;
+  border: 0.1rem solid #22BFA0;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-left: 1.5rem; }
+  .botao-voltar:hover {
+    background-color: #22BFA0;
+    color: #0b3c49;
+    border: 0.1rem solid #0b3c49;
+    cursor: pointer; }
+
 .botao-cancelar {
   background-color: darkred;
   padding-left: 1rem;
@@ -240,7 +226,22 @@
     background-color: red;
     cursor: pointer; }
 
-.inline-block {
-  display: inline-block; }
+.resumo__botao {
+  background-color: #22BFA0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: #0b3c49;
+  border: 0.1rem solid #0b3c49;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-bottom: 4rem; }
+  .resumo__botao:hover {
+    background-color: #0b3c49;
+    color: #22BFA0;
+    border: 0.1rem solid #22BFA0;
+    cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,41 @@
+.resumo {
+    background-color: $cor-branca;
+    padding: 1rem;
+    padding-right: 3rem;
+    text-align: end;
+
+    &__titulo {
+        font-family: $fonte-principal;
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+        font-weight: bold;
+        color: $green;
+    }
+
+    &__caixa {
+        border: 0.1rem solid $darkblue;
+        margin-bottom: 1rem;
+        width: 40%;
+        margin-left: auto;
+    }
+
+    &__lista {
+        padding: 1.0rem;
+    }
+
+    &__lista-item {
+        padding-bottom: 0.5rem;
+        color: $darkgrey;
+        font-family: $fonte-secundaria;
+        font-weight: bold;
+        text-align: start;
+    }
+
+    &__total {
+        font-family: $fonte-principal;
+        font-size: 1.3rem;
+        font-weight: bold;
+        color: $darkblue;
+        padding-bottom: 1rem;
+    }
+}

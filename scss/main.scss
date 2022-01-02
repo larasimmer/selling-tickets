@@ -1,0 +1,103 @@
+.main {
+    background-color: $lightgrey;
+
+    &__eventos {
+        width: 100%;
+    }
+
+    &__h1 {
+        font-family: $fonte-principal;
+        font-size: 2.5rem;
+        text-align: center;
+        color: $green;
+        padding-top: 2rem;
+    }
+
+    &__p {
+        font-family: $fonte-secundaria;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 1.5rem;
+    }
+
+    &__lista {
+        padding-top: 3rem;
+        text-align: center;
+    }
+
+    &__lista--item {
+        width: 40%;
+        height: 25%;
+        border: 0.1rem solid $darkblue;
+        border-radius: 1%;
+        display: inline-block;
+	    text-align: center;
+        vertical-align: top;
+        margin: 1.5rem;
+    }
+
+    .evento {
+        &__img {
+            width: 100%;
+            height: 350px;
+            margin-bottom: 1rem;
+        }
+
+        &__data {
+            font-family: $fonte-secundaria;
+            font-weight: bold;
+            color: $darkblue;
+        }
+
+        &__titulo {
+            font-family: $fonte-principal;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 1rem;
+            color: $green;
+        }
+
+        &__preco--cheio {
+            font-family: $fonte-secundaria;
+            font-weight: bold;
+            color: $darkblue;
+        }
+
+        &__preco--meia {
+            font-family: $fonte-secundaria;
+            font-weight: bold;
+            color: $darkblue;
+            font-size: 1.2rem;
+            padding: 0.5rem;
+        }
+
+        &__localizacao {
+            font-family: $fonte-secundaria;
+            font-weight: bold;
+            color: $darkgrey;
+            padding: 0.5rem;
+        }
+
+        &__form {
+            padding: 1rem;
+        }
+
+        &__ingressos {
+            font-family: $fonte-secundaria;
+            font-weight: bold;
+            color: $darkblue;
+        }
+
+        &__ingressos--select {
+            margin-right: 1.5rem;
+            height: 2.5rem;
+            width: 4rem;
+            font-size: 1rem;
+            color: $darkgrey;
+            font-family: $fonte-secundaria;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.header {
+    background-color: $darkblue;
+    display: flex;
+    align-items: center;
+
+    &__img {
+        width: 8rem;
+        padding-left: 3rem;
+    }
+
+    &__busca {
+        border: 0.1rem solid $green;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 0.5rem;
+        width: 15rem;
+        height: 1.5rem;
+        margin-left: auto;
+        margin-right: 4rem;
+        font-family: $fonte-secundaria;
+        font-size: 1rem;
+    }
+}
