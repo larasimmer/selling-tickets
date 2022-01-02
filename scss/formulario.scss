@@ -3,9 +3,8 @@
     padding-left: 2rem;
 
     &__titulo {
-        font-family: $fonte-principal;
+        @extend %fonte-titulo;
         font-size: 2rem;
-        color: $green;
         padding-top: 2rem;
         padding-bottom: 2rem;
     }
@@ -19,42 +18,26 @@
     }
 
     &__campo-longo {
-        margin-left: 1rem;
-        padding: 0.5rem;
-        width: 30rem;;
+        @extend %espacamento-campos-formulario;
+        width: 30rem;
     }
 
     &__campo-medio {
-        margin-left: 1rem;
-        padding: 0.5rem;
+        @extend %espacamento-campos-formulario;
         width: 15rem;;
     }
 
     &__campo-curto {
-        margin-left: 1rem;
-        padding: 0.5rem;
-        width: 5rem;;
+        @extend %espacamento-campos-formulario;
+        width: 5rem;
     }
 
     &__validade--opcao {
-        margin-right: 1.5rem;
-        height: 2.5rem;
-        width: 4rem;
-        font-size: 1rem;
-        color: $darkgrey;
-        font-family: $fonte-secundaria;
-        font-weight: bold;
-        text-align: center;
+        @extend %estilo-select-formulario;
     }
 
     &__estado--opcao {
-        margin-right: 1.5rem;
-        height: 2.5rem;
-        font-size: 1rem;
-        color: $darkgrey;
-        font-family: $fonte-secundaria;
-        font-weight: bold;
-        text-align: center;
+        @extend %estilo-select-formulario;
     }
 }
 
@@ -66,8 +49,6 @@
         vertical-align: baseline;
     }
 }
-
-
 
 .fab {
     font-size: 2.5rem;

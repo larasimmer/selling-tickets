@@ -1,0 +1,42 @@
+%padding-botoes {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+%fonte-botoes {
+    font-size: 1.2rem;
+    font-family: $fonte-principal;
+    font-weight: bold;
+}
+
+%margem-botoes {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+%estilo-select-formulario {
+    margin-right: 1.5rem;
+    height: 2.5rem;
+    width: 4rem;
+    font-size: 1rem;
+    color: $darkgrey;
+    font-family: $fonte-secundaria;
+    font-weight: bold;
+    text-align: center;
+}
+
+%fonte-titulo {
+    font-family: $fonte-principal;
+    color: $green;
+    font-weight: bold;
+}
+
+%espacamento-campos-formulario {
+    margin-left: 1rem;
+    padding: 0.5rem;
+}
+
+%fonte-informacoes-eventos {
+    font-family: $fonte-secundaria;
+    font-weight: bold;
+    color: $darkblue;
+}

@@ -6,17 +6,15 @@
     }
 
     &__h1 {
-        font-family: $fonte-principal;
+        @extend %fonte-titulo;
         font-size: 2.5rem;
         text-align: center;
-        color: $green;
         padding-top: 2rem;
     }
 
     &__p {
-        font-family: $fonte-secundaria;
+        @extend %fonte-informacoes-eventos;
         font-size: 1.2rem;
-        font-weight: bold;
         text-align: center;
         padding-top: 1.5rem;
     }
@@ -45,29 +43,21 @@
         }
 
         &__data {
-            font-family: $fonte-secundaria;
-            font-weight: bold;
-            color: $darkblue;
+            @extend %fonte-informacoes-eventos;
         }
 
         &__titulo {
-            font-family: $fonte-principal;
+            @extend %fonte-titulo;
             font-size: 1.5rem;
-            font-weight: bold;
             padding: 1rem;
-            color: $green;
         }
 
         &__preco--cheio {
-            font-family: $fonte-secundaria;
-            font-weight: bold;
-            color: $darkblue;
+            @extend %fonte-informacoes-eventos;
         }
 
         &__preco--meia {
-            font-family: $fonte-secundaria;
-            font-weight: bold;
-            color: $darkblue;
+            @extend %fonte-informacoes-eventos;
             font-size: 1.2rem;
             padding: 0.5rem;
         }
@@ -84,20 +74,11 @@
         }
 
         &__ingressos {
-            font-family: $fonte-secundaria;
-            font-weight: bold;
-            color: $darkblue;
+            @extend %fonte-informacoes-eventos;
         }
 
         &__ingressos--select {
-            margin-right: 1.5rem;
-            height: 2.5rem;
-            width: 4rem;
-            font-size: 1rem;
-            color: $darkgrey;
-            font-family: $fonte-secundaria;
-            font-weight: bold;
-            text-align: center;
+            @extend %estilo-select-formulario;
         }
     }
 }

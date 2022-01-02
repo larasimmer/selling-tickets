@@ -6,7 +6,4 @@ $cor-branca: white;
 $fonte-principal: 'Montserrat', sans-serif;
 $fonte-secundaria: 'Ubuntu', sans-serif;
 
-@import "header.scss", "main.scss", "resumo.scss", "footer.scss", "formulario.scss", "botoes.scss";
-
-
-
+@import "header.scss", "main.scss", "resumo.scss", "footer.scss", "formulario.scss", "botoes.scss", "placeholders.scss";

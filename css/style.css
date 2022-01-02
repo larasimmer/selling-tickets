@@ -22,15 +22,11 @@
   .main__eventos {
     width: 100%; }
   .main__h1 {
-    font-family: "Montserrat", sans-serif;
     font-size: 2.5rem;
     text-align: center;
-    color: #22BFA0;
     padding-top: 2rem; }
   .main__p {
-    font-family: "Ubuntu", sans-serif;
     font-size: 1.2rem;
-    font-weight: bold;
     text-align: center;
     padding-top: 1.5rem; }
   .main__lista {
@@ -49,24 +45,10 @@
     width: 100%;
     height: 350px;
     margin-bottom: 1rem; }
-  .main .evento__data {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: bold;
-    color: #0b3c49; }
   .main .evento__titulo {
-    font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
-    font-weight: bold;
-    padding: 1rem;
-    color: #22BFA0; }
-  .main .evento__preco--cheio {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: bold;
-    color: #0b3c49; }
+    padding: 1rem; }
   .main .evento__preco--meia {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: bold;
-    color: #0b3c49;
     font-size: 1.2rem;
     padding: 0.5rem; }
   .main .evento__localizacao {
@@ -76,19 +58,6 @@
     padding: 0.5rem; }
   .main .evento__form {
     padding: 1rem; }
-  .main .evento__ingressos {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: bold;
-    color: #0b3c49; }
-  .main .evento__ingressos--select {
-    margin-right: 1.5rem;
-    height: 2.5rem;
-    width: 4rem;
-    font-size: 1rem;
-    color: #5c5a5a;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: bold;
-    text-align: center; }
 
 .resumo {
   background-color: white;
@@ -96,18 +65,15 @@
   padding-right: 3rem;
   text-align: end; }
   .resumo__titulo {
-    font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
-    padding-bottom: 1rem;
-    font-weight: bold;
-    color: #22BFA0; }
+    padding-bottom: 1rem; }
   .resumo__caixa {
     border: 0.1rem solid #0b3c49;
     margin-bottom: 1rem;
     width: 40%;
     margin-left: auto; }
   .resumo__lista {
-    padding: 1.0rem; }
+    padding: 1rem; }
   .resumo__lista-item {
     padding-bottom: 0.5rem;
     color: #5c5a5a;
@@ -137,9 +103,7 @@
   width: 100%;
   padding-left: 2rem; }
   .form__titulo {
-    font-family: "Montserrat", sans-serif;
     font-size: 2rem;
-    color: #22BFA0;
     padding-top: 2rem;
     padding-bottom: 2rem; }
   .form__item {
@@ -149,34 +113,11 @@
     font-size: 1.2rem;
     padding: 1.2rem; }
   .form__campo-longo {
-    margin-left: 1rem;
-    padding: 0.5rem;
     width: 30rem; }
   .form__campo-medio {
-    margin-left: 1rem;
-    padding: 0.5rem;
     width: 15rem; }
   .form__campo-curto {
-    margin-left: 1rem;
-    padding: 0.5rem;
     width: 5rem; }
-  .form__validade--opcao {
-    margin-right: 1.5rem;
-    height: 2.5rem;
-    width: 4rem;
-    font-size: 1rem;
-    color: #5c5a5a;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: bold;
-    text-align: center; }
-  .form__estado--opcao {
-    margin-right: 1.5rem;
-    height: 2.5rem;
-    font-size: 1rem;
-    color: #5c5a5a;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: bold;
-    text-align: center; }
 
 .cartao {
   padding: 0.3rem; }
@@ -192,17 +133,8 @@
 
 .botao-voltar {
   background-color: #0b3c49;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   color: #22BFA0;
-  border: 0.1rem solid #22BFA0;
-  font-size: 1.2rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  margin-top: 1rem;
-  margin-left: 1.5rem; }
+  border: 0.1rem solid #22BFA0; }
   .botao-voltar:hover {
     background-color: #22BFA0;
     color: #0b3c49;
@@ -211,37 +143,57 @@
 
 .botao-cancelar {
   background-color: darkred;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   color: white;
-  border: 0.1rem solid #5c5a5a;
-  font-size: 1.2rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  margin-top: 1rem;
-  margin-right: 1.5rem; }
+  border: 0.1rem solid #5c5a5a; }
   .botao-cancelar:hover {
     background-color: red;
     cursor: pointer; }
 
 .resumo__botao {
   background-color: #22BFA0;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
   color: #0b3c49;
   border: 0.1rem solid #0b3c49;
-  font-size: 1.2rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
   margin-bottom: 4rem; }
   .resumo__botao:hover {
     background-color: #0b3c49;
     color: #22BFA0;
     border: 0.1rem solid #22BFA0;
     cursor: pointer; }
+
+.botao-voltar, .botao-cancelar, .resumo__botao {
+  padding: 0.5rem 1rem 0.5rem 1rem; }
+
+.botao-voltar, .botao-cancelar, .resumo__botao {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold; }
+
+.botao-voltar, .botao-cancelar {
+  margin-top: 1rem;
+  margin-left: 1.5rem; }
+
+.main .evento__ingressos--select, .form__validade--opcao, .form__estado--opcao {
+  margin-right: 1.5rem;
+  height: 2.5rem;
+  width: 4rem;
+  font-size: 1rem;
+  color: #5c5a5a;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  text-align: center; }
+
+.main__h1, .main .evento__titulo, .resumo__titulo, .form__titulo {
+  font-family: "Montserrat", sans-serif;
+  color: #22BFA0;
+  font-weight: bold; }
+
+.form__campo-longo, .form__campo-medio, .form__campo-curto {
+  margin-left: 1rem;
+  padding: 0.5rem; }
+
+.main__p, .main .evento__data, .main .evento__preco--cheio, .main .evento__preco--meia, .main .evento__ingressos {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  color: #0b3c49; }
 
 /*# sourceMappingURL=style.css.map */

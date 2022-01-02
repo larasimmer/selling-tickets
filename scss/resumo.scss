@@ -5,11 +5,9 @@
     text-align: end;
 
     &__titulo {
-        font-family: $fonte-principal;
+        @extend %fonte-titulo;
         font-size: 1.5rem;
         padding-bottom: 1rem;
-        font-weight: bold;
-        color: $green;
     }
 
     &__caixa {
@@ -20,7 +18,7 @@
     }
 
     &__lista {
-        padding: 1.0rem;
+        padding: 1rem;
     }
 
     &__lista-item {
