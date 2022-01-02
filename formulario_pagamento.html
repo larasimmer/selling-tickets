@@ -14,38 +14,38 @@
     <body>
         <header class="header">
             <img src="img/logotipo.png" alt="Logotipo da Awesome tickets" class="header__img">
-            <input type="text" placeholder="Pesquisar eventos..." class="header__search">
+            <input type="text" placeholder="Pesquisar eventos..." class="header__busca">
         </header>
         <main>
-            <a href="formulario_informacoes_pessoais.html"><button class="go-back-button">Voltar</button></a>
+            <a href="formulario_informacoes_pessoais.html"><button class="botao-voltar">Voltar</button></a>
             <form class="form">
-                <h3 class="form__title">Informações de pagamento</h3>
-                <div class="form__iten">
+                <h3 class="form__titulo">Informações de pagamento</h3>
+                <div class="form__item">
                     <p>Selecione a forma de pagamento:</p>
-                    <div class= "card">
-                        <input class="card__select" type="radio" id="visa" name="visa" value="visa">
+                    <div class= "cartao">
+                        <input class="cartao__opcao" type="radio" id="visa" name="visa" value="visa">
                         <label for="visa"><i class="fab fa-cc-visa"></i></label><br>
                     </div>
-                    <div class= "card">
-                        <input class="card__select" type="radio" id="mastercard" name="mastercard" value="mastercard">
+                    <div class= "cartao">
+                        <input class="cartao__opcao" type="radio" id="mastercard" name="mastercard" value="mastercard">
                         <label for="mastercard"><i class="fab fa-cc-mastercard"></i></label><br>
                     </div>
-                    <div class= "card">
-                        <input class="card__select" type="radio" id="americanexpress" name="americanexpress" value="americanexpress">
+                    <div class= "cartao">
+                        <input class="cartao__opcao" type="radio" id="americanexpress" name="americanexpress" value="americanexpress">
                         <label for="americanexpress"><i class="fab fa-cc-amex"></i></label><br>
                     </div>
-                    <div class= "card">
-                        <input class="card__select" type="radio" id="dinersclub" name="dinersclub" value="dinersclub">
+                    <div class= "cartao">
+                        <input class="cartao__opcao" type="radio" id="dinersclub" name="dinersclub" value="dinersclub">
                         <label for="dinersclub"><i class="fab fa-cc-diners-club"></i></label><br>
                     </div>
                 </div>
-                <div class="form__iten">
+                <div class="form__item">
                     <label for="numero-cartao">Número do cartão:</label>
-                    <input class="form__field-long" type="text" id="numero-cartao" name="numero-cartao"><br>
+                    <input class="form__campo-longo" type="text" id="numero-cartao" name="numero-cartao"><br>
                 </div>
-                <div class="form__iten inline-block">
+                <div class="form__item inline-block">
                     <label for="mes-validade">Mês de validade do cartão:</label>
-                    <select class="form__field-short" id="mes-validade" name="mes-validade">
+                    <select class="form__campo-curto form__validade--opcao" id="mes-validade" name="mes-validade">
                         <option value="01">01</option>
                         <option value="02">02</option>
                         <option value="03">03</option>
@@ -60,58 +60,58 @@
                         <option value="12">12</option>
                     </select><br>
                 </div>
-                <div class="form__iten inline-block">
+                <div class="form__item inline-block">
                     <label for="ano-validade">Ano de validade do cartão:</label>
-                    <input class="form__field-short" type="text" id="ano-validade" name="ano-validade"><br>
+                    <input class="form__campo-curto" type="text" id="ano-validade" name="ano-validade"><br>
                 </div>
-                <div class="form__iten">
+                <div class="form__item">
                     <label for="código-seguranca">Código de segurança:</label>
-                    <input class="form__field-short" type="text" id="código-seguranca" name="código-seguranca"><br>
+                    <input class="form__campo-curto" type="text" id="código-seguranca" name="código-seguranca"><br>
                 </div>
-                <h3 class="form__title">Dados do titular do cartão</h3>
-                <div class="form__iten">
+                <h3 class="form__titulo">Dados do titular do cartão</h3>
+                <div class="form__item">
                     <label for="nome-titular">Nome do titular (como impresso no cartão):</label>
-                    <input class="form__field-long" type="text" id="nome-titular" name="nome-titular"><br>
+                    <input class="form__campo-longo" type="text" id="nome-titular" name="nome-titular"><br>
                 </div>
-                <div class="form__iten inline-block">
+                <div class="form__item inline-block">
                     <label for="data-nascimento">Data de nascimento:</label>
-                    <input class="form__field-medium" type="date" id="data-nascimento" name="data-nascimento"><br>
+                    <input class="form__campo-medio" type="date" id="data-nascimento" name="data-nascimento"><br>
                 </div>
-                <div class="form__iten inline-block">
+                <div class="form__item inline-block">
                     <label for="cpf">CPF:</label>
-                    <input class="form__field-medium" type="text" id="cpf" name="cpf"><br>
+                    <input class="form__campo-medio" type="text" id="cpf" name="cpf"><br>
                 </div>
-                <div class="form__iten">
+                <div class="form__item">
                     <label for="phone">Telefone:</label>
-                    <input class="form__field-medium" type="tel" id="phone" name="phone"><br>
+                    <input class="form__campo-medio" type="tel" id="phone" name="phone"><br>
                 </div>
-                <div class="form__iten">
+                <div class="form__item">
                     <label for="cep">CEP:</label>
-                    <input class="form__field-medium" type="text" id="cep" name="cep"><br>
+                    <input class="form__campo-medio" type="text" id="cep" name="cep"><br>
                 </div>
-                <div class="form__iten inline-block">
+                <div class="form__item inline-block">
                     <label for="logradouro">Logradouro:</label>
-                    <input class="form__field-long" type="text" id="logradouro" name="logradouro"><br>
+                    <input class="form__campo-longo" type="text" id="logradouro" name="logradouro"><br>
                 </div>
-                <div class="form__iten inline-block">
+                <div class="form__item inline-block">
                     <label for="numero">Número:</label>
-                    <input class="form__field-short" type="text" id="numero" name="numero"><br>
+                    <input class="form__campo-curto" type="text" id="numero" name="numero"><br>
                 </div>
-                <div class="form__iten">
+                <div class="form__item">
                     <label for="complemento">Complemento:</label>
-                    <input class="form__field-long" type="text" id="complemento" name="complemento"><br>
+                    <input class="form__campo-longo" type="text" id="complemento" name="complemento"><br>
                 </div>
-                <div class="form__iten inline-block">
+                <div class="form__item inline-block">
                     <label for="bairro">Bairro:</label>
-                    <input class="form__field-medium" type="text" id="bairro" name="bairro"><br>
+                    <input class="form__campo-medio" type="text" id="bairro" name="bairro"><br>
                 </div>
-                <div class="form__iten inline-block">
+                <div class="form__item inline-block">
                     <label for="cidade">Cidade:</label>
-                    <input class="form__field-medium" type="text" id="cidade" name="cidade"><br>
+                    <input class="form__campo-medio" type="text" id="cidade" name="cidade"><br>
                 </div>
-                <div class="form__iten">
+                <div class="form__item">
                     <label for="estado">Estado:</label>
-                    <select class="form__field-medium" id="estado" name="estado">
+                    <select class="form__campo-medio form__estado--opcao" id="estado" name="estado">
                         <option value="acre">Acre</option>
                         <option value="alagoas">Alagoas</option>
                         <option value="amapa">Amapá</option>
@@ -142,20 +142,20 @@
                     </select><br>
                 </div>
             </form>
-            <section class="summary">
-                <h3 class="summary__title">Resumo da compra</h3>
-                <div class="summary__box">
-                    <ul class="summary__list">
-                        <li class="summary__list-iten">
+            <section class="resumo">
+                <h3 class="resumo__titulo">Resumo da compra</h3>
+                <div class="resumo__caixa">
+                    <ul class="resumo__lista">
+                        <li class="resumo__lista-item">
                         <h3>[Nome do evento]</h3>
                         <h5>[Data e horário do evento]</h5>
                         <h5>[Local do evento]</h5>
                         </li>
                     </ul>
                 </div>
-                <h3 class="summary__total">Total: [total da compra]</h3>
-                <a href="index.html"><button class="cancel-button">Cancelar</button></a>
-                <a href="formulario_pagamento.html"><button class="summary__button">Finalizar compra</button></a>
+                <h3 class="resumo__total">Total: [total da compra]</h3>
+                <a href="index.html"><button class="botao-cancelar">Cancelar</button></a>
+                <a href="formulario_pagamento.html"><button class="resumo__botao">Finalizar compra</button></a>
             </section>
         </main>
         <footer class="footer">

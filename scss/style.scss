@@ -16,7 +16,7 @@ $fonte-secundaria: 'Ubuntu', sans-serif;
         padding-left: 3rem;
     }
 
-    &__search {
+    &__busca {
         border: 0.1rem solid $green;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
@@ -33,7 +33,7 @@ $fonte-secundaria: 'Ubuntu', sans-serif;
 .main {
     background-color: $lightgrey;
 
-    &__events {
+    &__eventos {
         width: 100%;
     }
 
@@ -53,12 +53,12 @@ $fonte-secundaria: 'Ubuntu', sans-serif;
         padding-top: 1.5rem;
     }
 
-    &__list {
+    &__lista {
         padding-top: 3rem;
         text-align: center;
     }
 
-    &__list-iten {
+    &__lista--item {
         width: 40%;
         height: 25%;
         border: 0.1rem solid $darkblue;
@@ -69,20 +69,20 @@ $fonte-secundaria: 'Ubuntu', sans-serif;
         margin: 1.5rem;
     }
 
-    .event {
+    .evento {
         &__img {
             width: 100%;
             height: 350px;
             margin-bottom: 1rem;
         }
 
-        &__date {
+        &__data {
             font-family: $fonte-secundaria;
             font-weight: bold;
             color: $darkblue;
         }
 
-        &__title {
+        &__titulo {
             font-family: $fonte-principal;
             font-size: 1.5rem;
             font-weight: bold;
@@ -90,13 +90,13 @@ $fonte-secundaria: 'Ubuntu', sans-serif;
             color: $green;
         }
 
-        &__price-full {
+        &__preco--cheio {
             font-family: $fonte-secundaria;
             font-weight: bold;
             color: $darkblue;
         }
 
-        &__price-half {
+        &__preco--meia {
             font-family: $fonte-secundaria;
             font-weight: bold;
             color: $darkblue;
@@ -104,7 +104,7 @@ $fonte-secundaria: 'Ubuntu', sans-serif;
             padding: 0.5rem;
         }
 
-        &__location {
+        &__localizacao {
             font-family: $fonte-secundaria;
             font-weight: bold;
             color: $darkgrey;
@@ -115,13 +115,13 @@ $fonte-secundaria: 'Ubuntu', sans-serif;
             padding: 1rem;
         }
 
-        &__quantity-tickets {
+        &__ingressos {
             font-family: $fonte-secundaria;
             font-weight: bold;
             color: $darkblue;
         }
 
-        &__tickets-select {
+        &__ingressos--select {
             margin-right: 1.5rem;
             height: 2.5rem;
             width: 4rem;
@@ -134,13 +134,13 @@ $fonte-secundaria: 'Ubuntu', sans-serif;
     }
 }
 
-.summary {
+.resumo {
     background-color: $cor-branca;
     padding: 1rem;
     padding-right: 3rem;
     text-align: end;
 
-    &__title {
+    &__titulo {
         font-family: $fonte-principal;
         font-size: 1.5rem;
         padding-bottom: 1rem;
@@ -148,18 +148,18 @@ $fonte-secundaria: 'Ubuntu', sans-serif;
         color: $green;
     }
 
-    &__box {
+    &__caixa {
         border: 0.1rem solid $darkblue;
         margin-bottom: 1rem;
         width: 40%;
         margin-left: auto;
     }
 
-    &__list {
+    &__lista {
         padding: 1.0rem;
     }
 
-    &__list-iten {
+    &__lista-item {
         padding-bottom: 0.5rem;
         color: $darkgrey;
         font-family: $fonte-secundaria;
@@ -175,7 +175,7 @@ $fonte-secundaria: 'Ubuntu', sans-serif;
         padding-bottom: 1rem;
     }
 
-    &__button {
+    &__botao {
         background-color: $green;
         padding-left: 1rem;
         padding-right:1rem;
@@ -186,6 +186,7 @@ $fonte-secundaria: 'Ubuntu', sans-serif;
         font-size: 1.2rem;
         font-family: $fonte-principal;
         font-weight: bold;
+        margin-bottom: 4rem;
 
         &:hover {
             background-color: $darkblue;
@@ -210,59 +211,7 @@ $fonte-secundaria: 'Ubuntu', sans-serif;
     }
 }
 
-.form {
-    width: 100%;
-    padding-left: 2rem;
-
-    &__title {
-        font-family: $fonte-principal;
-        font-size: 2rem;
-        color: $green;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
-
-    &__iten {
-        font-family: $fonte-secundaria;
-        font-weight: bold;
-        color: $darkblue;
-        font-size: 1.2rem;
-        padding: 1.2rem;
-    }
-
-    &__field-long {
-        margin-left: 1rem;
-        padding: 0.5rem;
-        width: 30rem;;
-    }
-
-    &__field-medium {
-        margin-left: 1rem;
-        padding: 0.5rem;
-        width: 15rem;;
-    }
-
-    &__field-short {
-        margin-left: 1rem;
-        padding: 0.5rem;
-        width: 5rem;;
-    }
-}
-
-.card {
-    padding: 0.3rem;
-
-    &__select {
-        width: 1rem;
-        vertical-align: baseline;
-    }
-}
-
-.fab {
-    font-size: 2.5rem;
-}
-
-.go-back-button {
+.botao-voltar {
     background-color: $darkblue;
     padding-left: 1rem;
     padding-right:1rem;
@@ -284,7 +233,82 @@ $fonte-secundaria: 'Ubuntu', sans-serif;
         }
 }
 
-.cancel-button {
+.form {
+    width: 100%;
+    padding-left: 2rem;
+
+    &__titulo {
+        font-family: $fonte-principal;
+        font-size: 2rem;
+        color: $green;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    &__item {
+        font-family: $fonte-secundaria;
+        font-weight: bold;
+        color: $darkblue;
+        font-size: 1.2rem;
+        padding: 1.2rem;
+    }
+
+    &__campo-longo {
+        margin-left: 1rem;
+        padding: 0.5rem;
+        width: 30rem;;
+    }
+
+    &__campo-medio {
+        margin-left: 1rem;
+        padding: 0.5rem;
+        width: 15rem;;
+    }
+
+    &__campo-curto {
+        margin-left: 1rem;
+        padding: 0.5rem;
+        width: 5rem;;
+    }
+
+    &__validade--opcao {
+        margin-right: 1.5rem;
+        height: 2.5rem;
+        width: 4rem;
+        font-size: 1rem;
+        color: $darkgrey;
+        font-family: $fonte-secundaria;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    &__estado--opcao {
+        margin-right: 1.5rem;
+        height: 2.5rem;
+        font-size: 1rem;
+        color: $darkgrey;
+        font-family: $fonte-secundaria;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+.cartao {
+    padding: 0.3rem;
+
+    &__opcao {
+        width: 1rem;
+        vertical-align: baseline;
+    }
+}
+
+
+
+.fab {
+    font-size: 2.5rem;
+}
+
+.botao-cancelar {
     background-color: darkred;
     padding-left: 1rem;
     padding-right:1rem;

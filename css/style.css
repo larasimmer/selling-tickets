@@ -5,7 +5,7 @@
   .header__img {
     width: 8rem;
     padding-left: 3rem; }
-  .header__search {
+  .header__busca {
     border: 0.1rem solid #22BFA0;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -19,7 +19,7 @@
 
 .main {
   background-color: #e0e0e0; }
-  .main__events {
+  .main__eventos {
     width: 100%; }
   .main__h1 {
     font-family: "Montserrat", sans-serif;
@@ -33,10 +33,10 @@
     font-weight: bold;
     text-align: center;
     padding-top: 1.5rem; }
-  .main__list {
+  .main__lista {
     padding-top: 3rem;
     text-align: center; }
-  .main__list-iten {
+  .main__lista--item {
     width: 40%;
     height: 25%;
     border: 0.1rem solid #0b3c49;
@@ -45,42 +45,42 @@
     text-align: center;
     vertical-align: top;
     margin: 1.5rem; }
-  .main .event__img {
+  .main .evento__img {
     width: 100%;
     height: 350px;
     margin-bottom: 1rem; }
-  .main .event__date {
+  .main .evento__data {
     font-family: "Ubuntu", sans-serif;
     font-weight: bold;
     color: #0b3c49; }
-  .main .event__title {
+  .main .evento__titulo {
     font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
     padding: 1rem;
     color: #22BFA0; }
-  .main .event__price-full {
+  .main .evento__preco--cheio {
     font-family: "Ubuntu", sans-serif;
     font-weight: bold;
     color: #0b3c49; }
-  .main .event__price-half {
+  .main .evento__preco--meia {
     font-family: "Ubuntu", sans-serif;
     font-weight: bold;
     color: #0b3c49;
     font-size: 1.2rem;
     padding: 0.5rem; }
-  .main .event__location {
+  .main .evento__localizacao {
     font-family: "Ubuntu", sans-serif;
     font-weight: bold;
     color: #5c5a5a;
     padding: 0.5rem; }
-  .main .event__form {
+  .main .evento__form {
     padding: 1rem; }
-  .main .event__quantity-tickets {
+  .main .evento__ingressos {
     font-family: "Ubuntu", sans-serif;
     font-weight: bold;
     color: #0b3c49; }
-  .main .event__tickets-select {
+  .main .evento__ingressos--select {
     margin-right: 1.5rem;
     height: 2.5rem;
     width: 4rem;
@@ -90,37 +90,37 @@
     font-weight: bold;
     text-align: center; }
 
-.summary {
+.resumo {
   background-color: white;
   padding: 1rem;
   padding-right: 3rem;
   text-align: end; }
-  .summary__title {
+  .resumo__titulo {
     font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
     padding-bottom: 1rem;
     font-weight: bold;
     color: #22BFA0; }
-  .summary__box {
+  .resumo__caixa {
     border: 0.1rem solid #0b3c49;
     margin-bottom: 1rem;
     width: 40%;
     margin-left: auto; }
-  .summary__list {
+  .resumo__lista {
     padding: 1.0rem; }
-  .summary__list-iten {
+  .resumo__lista-item {
     padding-bottom: 0.5rem;
     color: #5c5a5a;
     font-family: "Ubuntu", sans-serif;
     font-weight: bold;
     text-align: start; }
-  .summary__total {
+  .resumo__total {
     font-family: "Montserrat", sans-serif;
     font-size: 1.3rem;
     font-weight: bold;
     color: #0b3c49;
     padding-bottom: 1rem; }
-  .summary__button {
+  .resumo__botao {
     background-color: #22BFA0;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -130,8 +130,9 @@
     border: 0.1rem solid #0b3c49;
     font-size: 1.2rem;
     font-family: "Montserrat", sans-serif;
-    font-weight: bold; }
-    .summary__button:hover {
+    font-weight: bold;
+    margin-bottom: 4rem; }
+    .resumo__botao:hover {
       background-color: #0b3c49;
       color: #22BFA0;
       border: 0.1rem solid #22BFA0;
@@ -149,44 +150,7 @@
     font-size: 1rem;
     font-weight: bold; }
 
-.form {
-  width: 100%;
-  padding-left: 2rem; }
-  .form__title {
-    font-family: "Montserrat", sans-serif;
-    font-size: 2rem;
-    color: #22BFA0;
-    padding-top: 2rem;
-    padding-bottom: 2rem; }
-  .form__iten {
-    font-family: "Ubuntu", sans-serif;
-    font-weight: bold;
-    color: #0b3c49;
-    font-size: 1.2rem;
-    padding: 1.2rem; }
-  .form__field-long {
-    margin-left: 1rem;
-    padding: 0.5rem;
-    width: 30rem; }
-  .form__field-medium {
-    margin-left: 1rem;
-    padding: 0.5rem;
-    width: 15rem; }
-  .form__field-short {
-    margin-left: 1rem;
-    padding: 0.5rem;
-    width: 5rem; }
-
-.card {
-  padding: 0.3rem; }
-  .card__select {
-    width: 1rem;
-    vertical-align: baseline; }
-
-.fab {
-  font-size: 2.5rem; }
-
-.go-back-button {
+.botao-voltar {
   background-color: #0b3c49;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -199,13 +163,67 @@
   font-weight: bold;
   margin-top: 1rem;
   margin-left: 1.5rem; }
-  .go-back-button:hover {
+  .botao-voltar:hover {
     background-color: #22BFA0;
     color: #0b3c49;
     border: 0.1rem solid #0b3c49;
     cursor: pointer; }
 
-.cancel-button {
+.form {
+  width: 100%;
+  padding-left: 2rem; }
+  .form__titulo {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    color: #22BFA0;
+    padding-top: 2rem;
+    padding-bottom: 2rem; }
+  .form__item {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    color: #0b3c49;
+    font-size: 1.2rem;
+    padding: 1.2rem; }
+  .form__campo-longo {
+    margin-left: 1rem;
+    padding: 0.5rem;
+    width: 30rem; }
+  .form__campo-medio {
+    margin-left: 1rem;
+    padding: 0.5rem;
+    width: 15rem; }
+  .form__campo-curto {
+    margin-left: 1rem;
+    padding: 0.5rem;
+    width: 5rem; }
+  .form__validade--opcao {
+    margin-right: 1.5rem;
+    height: 2.5rem;
+    width: 4rem;
+    font-size: 1rem;
+    color: #5c5a5a;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    text-align: center; }
+  .form__estado--opcao {
+    margin-right: 1.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    color: #5c5a5a;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    text-align: center; }
+
+.cartao {
+  padding: 0.3rem; }
+  .cartao__opcao {
+    width: 1rem;
+    vertical-align: baseline; }
+
+.fab {
+  font-size: 2.5rem; }
+
+.botao-cancelar {
   background-color: darkred;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -218,7 +236,7 @@
   font-weight: bold;
   margin-top: 1rem;
   margin-right: 1.5rem; }
-  .cancel-button:hover {
+  .botao-cancelar:hover {
     background-color: red;
     cursor: pointer; }
 
