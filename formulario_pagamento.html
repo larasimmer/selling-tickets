@@ -82,11 +82,13 @@
                     <label for="data-nascimento">Data de nascimento:</label>
                     <input class="form__campo-medio" type="date" id="data-nascimento" name="data-nascimento"><br>
                     <span class="erro" id="nascimento-vazio">Este campo deve ser preenchido.</span>
+                    <span class="erro" id="nascimento-invalido">O titular da conta deve ser maior de idade.</span>
                 </div>
                 <div class="form__item inline-block">
                     <label for="cpf">CPF:</label>
                     <input class="form__campo-medio" type="text" id="cpf" name="cpf"><br>
                     <span class="erro" id="cpf-vazio">Este campo deve ser preenchido.</span>
+                    <span class="erro" id="cpf-vazio">O CPF informado não é válido.</span>
                 </div>
                 <div class="form__item">
                     <label for="phone">Telefone:</label>
@@ -101,6 +103,7 @@
                 <div class="form__item inline-block">
                     <label for="logradouro">Logradouro:</label>
                     <input class="form__campo-longo" type="text" id="logradouro" name="logradouro"><br>
+                    <span class="erro" id="logradouro-vazio">Este campo deve ser preenchido.</span>
                 </div>
                 <div class="form__item inline-block">
                     <label for="numero">Número:</label>
@@ -113,10 +116,12 @@
                 <div class="form__item inline-block">
                     <label for="bairro">Bairro:</label>
                     <input class="form__campo-medio" type="text" id="bairro" name="bairro"><br>
+                    <span class="erro" id="bairro-vazio">Este campo deve ser preenchido.</span>
                 </div>
                 <div class="form__item inline-block">
                     <label for="cidade">Cidade:</label>
                     <input class="form__campo-medio" type="text" id="cidade" name="cidade"><br>
+                    <span class="erro" id="cidade-vazio">Este campo deve ser preenchido.</span>
                 </div>
                 <div class="form__item">
                     <label for="estado">Estado:</label>
