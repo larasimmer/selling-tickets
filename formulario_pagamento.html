@@ -38,10 +38,12 @@
                         <input class="cartao__opcao" type="radio" id="dinersclub" name="dinersclub" value="dinersclub">
                         <label for="dinersclub"><i class="fab fa-cc-diners-club"></i></label><br>
                     </div>
+                    <span class="erro" id="bandeira-cartao-vazio">Você deve selecionar um cartão.</span>
                 </div>
                 <div class="form__item">
                     <label for="numero-cartao">Número do cartão:</label>
                     <input class="form__campo-longo" type="text" id="numero-cartao" name="numero-cartao"><br>
+                    <span class="erro" id="numero-cartao-vazio">Este campo deve ser preenchido.</span>
                 </div>
                 <div class="form__item inline-block">
                     <label for="mes-validade">Mês de validade do cartão:</label>
@@ -58,36 +60,43 @@
                         <option value="10">10</option>
                         <option value="11">11</option>
                         <option value="12">12</option>
-                    </select><br>
-                </div>
+                    </select>
+                </div><br>
                 <div class="form__item inline-block">
                     <label for="ano-validade">Ano de validade do cartão:</label>
                     <input class="form__campo-curto" type="text" id="ano-validade" name="ano-validade"><br>
+                    <span class="erro" id="ano-validade-vazio">Este campo deve ser preenchido.</span>
                 </div>
                 <div class="form__item">
                     <label for="código-seguranca">Código de segurança:</label>
                     <input class="form__campo-curto" type="text" id="código-seguranca" name="código-seguranca"><br>
+                    <span class="erro" id="codigo-segurança-vazio">Este campo deve ser preenchido.</span>
                 </div>
                 <h3 class="form__titulo">Dados do titular do cartão</h3>
                 <div class="form__item">
                     <label for="nome-titular">Nome do titular (como impresso no cartão):</label>
                     <input class="form__campo-longo" type="text" id="nome-titular" name="nome-titular"><br>
+                    <span class="erro" id="nome-vazio">Este campo deve ser preenchido.</span>
                 </div>
                 <div class="form__item inline-block">
                     <label for="data-nascimento">Data de nascimento:</label>
                     <input class="form__campo-medio" type="date" id="data-nascimento" name="data-nascimento"><br>
+                    <span class="erro" id="nascimento-vazio">Este campo deve ser preenchido.</span>
                 </div>
                 <div class="form__item inline-block">
                     <label for="cpf">CPF:</label>
                     <input class="form__campo-medio" type="text" id="cpf" name="cpf"><br>
+                    <span class="erro" id="cpf-vazio">Este campo deve ser preenchido.</span>
                 </div>
                 <div class="form__item">
                     <label for="phone">Telefone:</label>
                     <input class="form__campo-medio" type="tel" id="phone" name="phone"><br>
+                    <span class="erro" id="telefone-vazio">Este campo deve ser preenchido.</span>
                 </div>
                 <div class="form__item">
                     <label for="cep">CEP:</label>
                     <input class="form__campo-medio" type="text" id="cep" name="cep"><br>
+                    <span class="erro" id="cep-vazio">Este campo deve ser preenchido.</span>
                 </div>
                 <div class="form__item inline-block">
                     <label for="logradouro">Logradouro:</label>
@@ -161,5 +170,6 @@
         <footer class="footer">
             <p class="footer__p">Contato: contato@awesometickets.com.br</p>
         </footer>
+        <script src="js/validacoes.js"></script>
     </body>
     </html>

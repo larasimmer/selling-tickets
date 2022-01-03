@@ -79,6 +79,7 @@
 
         &__ingressos--select {
             @extend %estilo-select-formulario;
+            width: 4rem;
         }
     }
 }

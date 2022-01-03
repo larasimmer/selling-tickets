@@ -23,22 +23,27 @@
                 <div class="form__item">
                     <label for="primeiro-nome">Primeiro nome:</label>
                     <input class="form__campo-longo" type="text" id="primeiro-nome" name="primeiro-nome"><br>
+                    <span class="erro" id="primeiro-nome-vazio">Este campo deve ser preenchido.</span>
                 </div>
                 <div class="form__item">
                     <label for="ultimo-nome">Último nome:</label>
                     <input class="form__campo-longo" type="text" id="ultimo-nome" name="ultimo-nome"><br>
+                    <span class="erro" id="ultimo-nome-vazio">Este campo deve ser preenchido.</span>
                 </div>
                 <div class="form__item">
                     <label for="email">E-mail:</label>
                     <input class="form__campo-longo" type="email" id="email" name="email"><br>
+                    <span class="erro" id="email-vazio">Este campo deve ser preenchido.</span>
                 </div>
                 <div class="form__item inline-block">
                     <label for="senha">Cadastre uma senha:</label>
                     <input class="form__campo-medio" type="password" id="senha" name="senha"><br>
+                    <span class="erro" id="senha-vazio">Este campo deve ser preenchido.</span>
                 </div>
                 <div class="form__item inline-block">
                     <label for="confirmar-senha">Confirmar senha:</label>
                     <input class="form__campo-medio" type="password" id="confirmar-senha" name="confirmar-senha"><br>
+                    <span class="erro" id="confirmar-senha-vazio">Este campo deve ser preenchido.</span>
                 </div>
             </form>
             <section class="resumo">
@@ -59,5 +64,6 @@
         <footer class="footer">
             <p class="footer__p">Contato: contato@awesometickets.com.br</p>
         </footer>
+        <script src="js/validacoes.js"></script>
     </body>
     </html>

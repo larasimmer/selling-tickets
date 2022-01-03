@@ -58,6 +58,8 @@
     padding: 0.5rem; }
   .main .evento__form {
     padding: 1rem; }
+  .main .evento__ingressos--select {
+    width: 4rem; }
 
 .resumo {
   background-color: white;
@@ -175,7 +177,6 @@
 .main .evento__ingressos--select, .form__validade--opcao, .form__estado--opcao {
   margin-right: 1.5rem;
   height: 2.5rem;
-  width: 4rem;
   font-size: 1rem;
   color: #5c5a5a;
   font-family: "Ubuntu", sans-serif;
@@ -195,5 +196,10 @@
   font-family: "Ubuntu", sans-serif;
   font-weight: bold;
   color: #0b3c49; }
+
+.erro {
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: red; }
 
 /*# sourceMappingURL=style.css.map */
