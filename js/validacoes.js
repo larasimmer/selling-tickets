@@ -11,19 +11,26 @@ let erroSenhaInvalida = document.getElementById("senha-invalida");
 let erroSenhaDiferente = document.getElementById("senha-diferente");
 let inputConfirmarSenha = document.getElementById("confirmar-senha");
 let erroConfirmarSenhaVazio = document.getElementById("confirmar-senha-vazio");
-let botaoAvancarParaPagamento = document.getElementById("botao-avancar");
 
-botaoAvancarParaPagamento.onclick = realizaValidacoes;
+let formularioDeInformacoesPessoais = document.getElementById("form-informacoes-pessoais");
+formularioDeInformacoesPessoais.onsubmit = realizaValidacoes;
 
-function realizaValidacoes() {
-    validaPrimeiroNome();
-    validaUltimoNome();
-    validaEmailVazio();
-    validaFormatoEmail();
-    validaSenhaVazia();
-    validaConfirmarSenhaVazio();
-    validaSenhasIguais();
-    validaFormatoSenha();
+function realizaValidacoes(event) {
+    event.preventDefault();
+    let primeiroNomeVazio = validaPrimeiroNome();
+    let ultimoNomeVazio = validaUltimoNome();
+    let emailVazio = validaEmailVazio();
+    let emailInvalido = validaFormatoEmail();
+    let senhaVazia = validaSenhaVazia();
+    let senhasDiferentes = validaSenhasIguais();
+    let senhaFormatoInvalido = validaFormatoSenha();
+
+    if (primeiroNomeVazio == false && ultimoNomeVazio == false && emailVazio == false && emailInvalido == false && senhaVazia == false && 
+        senhasDiferentes == false && senhaFormatoInvalido == false) {
+            return false;
+        } else {
+            formularioDeInformacoesPessoais.submit();
+        }
 }
 
 //Validações de nome
@@ -104,21 +111,6 @@ function validaSenhaVazia() {
     }
 
     return senhaVazia;
-}
-
-function validaConfirmarSenhaVazio() {
-    let valorConfirmarSenha = inputConfirmarSenha.value;
-    let confirmarSenhaVazio = false;
-
-    if (valorConfirmarSenha.length <= 0) {
-        confirmarSenhaVazio = true;
-        erroConfirmarSenhaVazio.style.display = "block";
-    } else {
-        erroConfirmarSenhaVazio.style.display = "none";
-        confirmarSenhaVazio = false;
-    }
-
-    return confirmarSenhaVazio;
 }
 
 function validaSenhasIguais() {
