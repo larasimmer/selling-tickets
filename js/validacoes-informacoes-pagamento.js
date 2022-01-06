@@ -21,7 +21,7 @@ let erroLogradouroVazio = document.getElementById("logradouro-vazio");
 let inputBairro = document.getElementById("bairro");
 let erroBairroVazio = document.getElementById("bairro-vazio");
 let inputCidade = document.getElementById("cidade");
-let erroCidadeVazia = document.getElementById("cidade-vazio");
+let erroCidadeVazio = document.getElementById("cidade-vazio");
 
 let formularioDePagamento = document.getElementById("form-pagamento");
 let botaoFinalizar = document.getElementById("botao-finalizar");
@@ -33,7 +33,18 @@ function realizaValidacoes() {
     validaAnoDeValidadeVazio();
     validaCodigoDeSegurancaVazio();
     validaNomeDoTitularVazio();
+    validaDataDeNascimentoVazio();
+    validaMaioridadeDoTitular();
+    validaCpfVazio();
+    validaCalculoCpf();
+    validaTelefoneVazio();
+    validaCepVazio();
+    validaLogradouroVazio();
+    validaBairroVazio();
+    validaCidadeVazio();
 }
+
+//Validações de cartão de crédito
 
 function validaNumeroDoCartaoVazio() {
     let valorNumeroDoCartao = inputNumeroDoCartao.value;
@@ -80,6 +91,8 @@ function validaCodigoDeSegurancaVazio() {
     return codigoDeSegurancaVazio;
 }
 
+//Validações de dados do titular
+
 function validaNomeDoTitularVazio() {
     let valorNomeDoTitular = inputNomeDoTitular.value;
     let nomeDoTitularVazio = false;
@@ -95,5 +108,213 @@ function validaNomeDoTitularVazio() {
     return nomeDoTitularVazio;
 }
 
+function validaDataDeNascimentoVazio() {
+    let valorDataDeNascimento = inputDataDeNascimento.value;
+    let dataDeNascimentoVazio = false;
 
+    if (valorDataDeNascimento.length <= 0) {
+        dataDeNascimentoVazio = true;
+        erroDataDeNascimentoVazio.style.display = "block";
+    } else {
+        erroDataDeNascimentoVazio.style.display = "none";
+        dataDeNascimentoVazio = false;
+    }
+
+    return dataDeNascimentoVazio;
+}
+
+function validaMaioridadeDoTitular() {
+    let valorDataDeNascimento = new Date(inputDataDeNascimento.value);
+    let dataDeNascimentoInvalida = false;
+    
+    if (calculaDataDeNascimentoMais18(valorDataDeNascimento) == true) {
+        dataDeNascimentoInvalida = true;
+        erroDataDeNascimentoInvalida.style.display = "block";
+    } else {
+        erroDataDeNascimentoInvalida.style.display = "none";
+        dataDeNascimentoInvalida = false;
+    }
+
+    return dataDeNascimentoInvalida;
+}
+
+function calculaDataDeNascimentoMais18(data) {
+    let menorDeIdade = false;
+    let dataAtual = new Date();
+    let dataDeNascimentoMais18 = new Date(data.getUTCFullYear() + 18, data.getUTCMonth(), data.getUTCDate());
+
+    if (dataDeNascimentoMais18 > dataAtual) {
+        menorDeIdade = true;
+    } else {
+        menorDeIdade = false;
+    }
+
+    return menorDeIdade;
+}
+
+function validaCpfVazio() {
+    let valorCpf = inputCpf.value;
+    let cpfVazio = false;
+
+    if (valorCpf.length <= 0) {
+        cpfVazio = true;
+        erroCpfVazio.style.display = "block";
+    } else {
+        erroCpfVazio.style.display = "none";
+        cpfVazio = false;
+    }
+
+    return cpfVazio;
+}
+
+function validaCalculoCpf() {
+    let cpfInvalido = false;
+    let digitoVerificador1Invalido = comparaDigitoVerificador1();
+    let digitoVerificador2Invalido = comparaDigitoVerificador2();
+
+    if (digitoVerificador1Invalido == true || digitoVerificador2Invalido == true) {
+        cpfInvalido = true;
+        erroCpfInvalido.style.display = "block";
+    } else {
+        erroCpfInvalido.style.display = "none";
+        cpfInvalido = false;
+    }
+
+    return cpfInvalido;
+}
+
+function somaDigitoVerificador1Cpf() {
+    let valorCpf = inputCpf.value;
+    let cpfSemDigitosVerificadores = valorCpf.substr(0,9);
+    let soma = 0
+    let multiplicador = 10;
+
+    for(let i=0; multiplicador > 1; multiplicador--) {
+        soma = soma + cpfSemDigitosVerificadores[i]*multiplicador;
+        i++;
+    }
+
+    return soma;
+}
+
+function comparaDigitoVerificador1() {
+    let valorCpf = inputCpf.value;
+    let digitoVerificador1 = valorCpf.substr(9,1);
+    let digitoVerificador1Invalido = false;
+    soma = somaDigitoVerificador1Cpf();
+
+    if (11 - (soma % 11) != digitoVerificador1) {
+        digitoVerificador1Invalido = true;
+    } else {
+        digitoVerificador1Invalido = false;
+    }
+
+    return digitoVerificador1Invalido;
+}
+
+function somaDigitoVerificador2Cpf() {
+    let valorCpf = inputCpf.value;
+    let cpfSemUltimoDigito = valorCpf.substr(0,10);
+    let soma = 0
+    let multiplicador = 11;
+
+    for(let i=0; multiplicador > 1; multiplicador--) {
+        soma = soma + cpfSemUltimoDigito[i]*multiplicador;
+        i++;
+    }
+
+    return soma;
+}
+
+function comparaDigitoVerificador2() {
+    let valorCpf = inputCpf.value;
+    let digitoVerificador2 = valorCpf.substr(10,1);
+    let digitoVerificador2Invalido = false;
+    soma = somaDigitoVerificador2Cpf();
+
+    if (11 - (soma % 11) != digitoVerificador2) {
+        digitoVerificador2Invalido = true;
+    } else {
+        digitoVerificador2Invalido = false;
+    }
+
+    return digitoVerificador2Invalido;
+}
+
+function validaTelefoneVazio() {
+    let valorTelefone = inputTelefone.value;
+    let telefoneVazio = false;
+
+    if (valorTelefone.length <= 0) {
+        telefoneVazio = true;
+        erroTelefoneVazio.style.display = "block";
+    } else {
+        erroTelefoneVazio.style.display = "none";
+        telefoneVazio = false;
+    }
+
+    return telefoneVazio;
+}
+
+//Validações de endereço do titular
+
+function validaCepVazio() {
+    let valorCep = inputCep.value;
+    let cepVazio = false;
+
+    if (valorCep.length <= 0) {
+        cepVazio = true;
+        erroCepVazio.style.display = "block";
+    } else {
+        erroCepVazio.style.display = "none";
+        cepVazio = false;
+    }
+
+    return cepVazio;
+}
+
+function validaLogradouroVazio() {
+    let valorLogradouro = inputLogradouro.value;
+    let logradouroVazio = false;
+
+    if (valorLogradouro.length <= 0) {
+        logradouroVazio = true;
+        erroLogradouroVazio.style.display = "block";
+    } else {
+        erroLogradouroVazio.style.display = "none";
+        logradouroVazio = false;
+    }
+
+    return logradouroVazio;
+}
+
+function validaBairroVazio() {
+    let valorBairro = inputBairro.value;
+    let bairroVazio = false;
+
+    if (valorBairro.length <= 0) {
+        bairroVazio = true;
+        erroBairroVazio.style.display = "block";
+    } else {
+        erroBairroVazio.style.display = "none";
+        bairroVazio = false;
+    }
+
+    return bairroVazio;
+}
+
+function validaCidadeVazio() {
+    let valorCidade = inputCidade.value;
+    let cidadeVazio = false;
+
+    if (valorCidade.length <= 0) {
+        cidadeVazio = true;
+        erroCidadeVazio.style.display = "block";
+    } else {
+        erroCidadeVazio.style.display = "none";
+        cidadeVazio = false;
+    }
+
+    return cidadeVazio;
+}
 
