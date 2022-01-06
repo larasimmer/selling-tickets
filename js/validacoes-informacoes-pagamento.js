@@ -30,6 +30,9 @@ botaoFinalizar.onclick = realizaValidacoes;
 
 function realizaValidacoes() {
     validaNumeroDoCartaoVazio();
+    validaAnoDeValidadeVazio();
+    validaCodigoDeSegurancaVazio();
+    validaNomeDoTitularVazio();
 }
 
 function validaNumeroDoCartaoVazio() {
@@ -61,4 +64,36 @@ function validaAnoDeValidadeVazio() {
 
     return anoDeValidadeVazio;
 }
+
+function validaCodigoDeSegurancaVazio() {
+    let valorCodigoDeSeguranca = inputCodigoDeSeguranca.value;
+    let codigoDeSegurancaVazio = false;
+
+    if (valorCodigoDeSeguranca.length <= 0) {
+        codigoDeSegurancaVazio = true;
+        erroCodigoDeSegurancaVazio.style.display = "block";
+    } else {
+        erroCodigoDeSegurancaVazio.style.display = "none";
+        codigoDeSegurancaVazio = false;
+    }
+
+    return codigoDeSegurancaVazio;
+}
+
+function validaNomeDoTitularVazio() {
+    let valorNomeDoTitular = inputNomeDoTitular.value;
+    let nomeDoTitularVazio = false;
+
+    if (valorNomeDoTitular.length <= 0) {
+        nomeDoTitularVazio = true;
+        erroNomeDoTitularVazio.style.display = "block";
+    } else {
+        erroNomeDoTitularVazio.style.display = "none";
+        nomeDoTitularVazio = false;
+    }
+
+    return nomeDoTitularVazio;
+}
+
+
 
