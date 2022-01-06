@@ -18,7 +18,7 @@
         </header>
         <main>
             <a href="formulario_informacoes_pessoais.html"><button class="botao-voltar">Voltar</button></a>
-            <form class="form">
+            <form class="form" id="form-pagamento">
                 <h3 class="form__titulo">Informações de pagamento</h3>
                 <div class="form__item">
                     <p>Selecione a forma de pagamento:</p>
@@ -91,8 +91,8 @@
                     <span class="erro" id="cpf-invalido">O CPF informado não é válido.</span>
                 </div>
                 <div class="form__item">
-                    <label for="phone">Telefone:</label>
-                    <input class="form__campo-medio" type="tel" id="phone" name="phone"><br>
+                    <label for="telefone">Telefone:</label>
+                    <input class="form__campo-medio" type="tel" id="telefone" name="phone"><br>
                     <span class="erro" id="telefone-vazio">Este campo deve ser preenchido.</span>
                 </div>
                 <div class="form__item">
@@ -169,12 +169,12 @@
                 </div>
                 <h3 class="resumo__total">Total: [total da compra]</h3>
                 <a href="index.html"><button class="botao-cancelar">Cancelar</button></a>
-                <!--<a href="formulario_pagamento.html">--><button class="resumo__botao">Finalizar compra</button><!--</a>-->
+                <!--<a href="formulario_pagamento.html">--><button class="resumo__botao" id="botao-finalizar">Finalizar compra</button><!--</a>-->
             </section>
         </main>
         <footer class="footer">
             <p class="footer__p">Contato: contato@awesometickets.com.br</p>
         </footer>
-        <script src="js/validacoes.js"></script>
+        <script src="js/validacoes-informacoes-pagamento.js"></script>
     </body>
     </html>
