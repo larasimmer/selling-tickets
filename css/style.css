@@ -63,8 +63,8 @@
 
 .resumo {
   background-color: white;
-  padding: 1rem;
   padding-right: 3rem;
+  padding-top: 8rem;
   text-align: end; }
   .resumo__titulo {
     font-size: 1.5rem;
