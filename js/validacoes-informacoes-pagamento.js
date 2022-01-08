@@ -54,6 +54,8 @@ function realizaValidacoes(event) {
             return false;
             } else {
                 formularioDePagamento.submit();
+                alert("Sua compra foi realizada com sucesso");
+                location.replace("index.html");
             }
         
 }
