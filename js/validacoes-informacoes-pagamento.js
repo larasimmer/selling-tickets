@@ -1,7 +1,9 @@
 let inputNumeroDoCartao = document.getElementById("numero-cartao");
 let erroNumeroDoCartaoVazio = document.getElementById("numero-cartao-vazio");
+let inputMesDeValidade = document.getElementById("mes-validade");
 let inputAnoDeValidade= document.getElementById("ano-validade");
 let erroAnoDeValidadeVazio = document.getElementById("ano-validade-vazio");
+let erroCartaoInvalido = document.getElementById("cartao-invalido");
 let inputCodigoDeSeguranca = document.getElementById("codigo-seguranca");
 let erroCodigoDeSegurancaVazio = document.getElementById("codigo-seguranca-vazio");
 let inputNomeDoTitular = document.getElementById("nome-titular");
@@ -16,12 +18,14 @@ let inputTelefone = document.getElementById("telefone");
 let erroTelefoneVazio = document.getElementById("telefone-vazio");
 let inputCep = document.getElementById("cep");
 let erroCepVazio = document.getElementById("cep-vazio");
+let inputNumero = document.getElementById("numero");
 let inputLogradouro = document.getElementById("logradouro");
 let erroLogradouroVazio = document.getElementById("logradouro-vazio");
 let inputBairro = document.getElementById("bairro");
 let erroBairroVazio = document.getElementById("bairro-vazio");
 let inputCidade = document.getElementById("cidade");
 let erroCidadeVazio = document.getElementById("cidade-vazio");
+let inputEstado = document.getElementById("estado");
 
 let formularioDePagamento = document.getElementById("form-pagamento");
 let botaoFinalizar = document.getElementById("botao-finalizar");
@@ -31,6 +35,7 @@ botaoFinalizar.onclick = realizaValidacoes;
 function realizaValidacoes() {
     validaNumeroDoCartaoVazio();
     validaAnoDeValidadeVazio();
+    validaTempoDeValidadeDoCartao();
     validaCodigoDeSegurancaVazio();
     validaNomeDoTitularVazio();
     validaDataDeNascimentoVazio();
@@ -76,6 +81,23 @@ function validaAnoDeValidadeVazio() {
     return anoDeValidadeVazio;
 }
 
+function validaTempoDeValidadeDoCartao() {
+    let valorAnoDeValidade = inputAnoDeValidade.value;
+    let valorMesDeValidade = inputMesDeValidade.value;
+    let dataAtual = new Date();
+    let validadeDoCartaoMenos6Meses = new Date();
+    validadeDoCartaoMenos6Meses.setFullYear(valorAnoDeValidade, valorMesDeValidade - 6, 1);
+    let cartaoInvalido = false;
+
+    if(validadeDoCartaoMenos6Meses < dataAtual) {
+        cartaoInvalido = true;
+        erroCartaoInvalido.style.display = "block";
+    } else {
+        cartaoInvalido = false;
+        erroCartaoInvalido.style.display = "none";
+    }
+}
+  
 function validaCodigoDeSegurancaVazio() {
     let valorCodigoDeSeguranca = inputCodigoDeSeguranca.value;
     let codigoDeSegurancaVazio = false;
@@ -107,6 +129,8 @@ function validaNomeDoTitularVazio() {
 
     return nomeDoTitularVazio;
 }
+
+//Validações de data de nascimento do titular
 
 function validaDataDeNascimentoVazio() {
     let valorDataDeNascimento = inputDataDeNascimento.value;
@@ -151,6 +175,8 @@ function calculaDataDeNascimentoMais18(data) {
 
     return menorDeIdade;
 }
+
+//Validações de cpf do titular
 
 function validaCpfVazio() {
     let valorCpf = inputCpf.value;
@@ -271,6 +297,37 @@ function validaCepVazio() {
     }
 
     return cepVazio;
+}
+
+$("#cep").blur(function() {
+    let valorCep = inputCep.value;
+    const url = `https://viacep.com.br/ws/${valorCep}/json/`;
+    const options = {
+        method: "GET",
+        mode: "cors",
+        headers: {
+            "content-type": "application/json;charset=UTF-8"
+        }
+    }
+
+    fetch(url, options).then((response) => response.json()).then(data => {
+                completaEndereçoViaApi(data);
+            }
+        );
+});
+
+function completaEndereçoViaApi(data) {
+    inputLogradouro.value = data.logradouro;
+    erroLogradouroVazio.style.display = "none";
+
+    inputBairro.value = data.bairro;
+    erroBairroVazio.style.display = "none";
+
+    inputCidade.value = data.localidade;
+    erroCidadeVazio.style.display = "none";
+
+    inputEstado.value = data.uf;
+    console.log(inputEstado.value);
 }
 
 function validaLogradouroVazio() {

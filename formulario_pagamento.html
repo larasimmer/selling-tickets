@@ -20,22 +20,22 @@
             <a href="formulario_informacoes_pessoais.html"><button class="botao-voltar">Voltar</button></a>
             <form class="form" id="form-pagamento">
                 <h3 class="form__titulo">Informações de pagamento</h3>
-                <div class="form__item">
+                <div class="form__item" id="bandeira-cartao">
                     <p>Selecione a forma de pagamento:</p>
                     <div class= "cartao">
-                        <input class="cartao__opcao" type="radio" id="visa" name="visa" value="visa">
+                        <input class="cartao__opcao" type="radio" id="visa" name="cartao__opcao" value="visa" checked="checked">
                         <label for="visa"><i class="fab fa-cc-visa"></i></label><br>
                     </div>
                     <div class= "cartao">
-                        <input class="cartao__opcao" type="radio" id="mastercard" name="mastercard" value="mastercard">
+                        <input class="cartao__opcao" type="radio" id="mastercard" name="cartao__opcao" value="mastercard">
                         <label for="mastercard"><i class="fab fa-cc-mastercard"></i></label><br>
                     </div>
                     <div class= "cartao">
-                        <input class="cartao__opcao" type="radio" id="americanexpress" name="americanexpress" value="americanexpress">
+                        <input class="cartao__opcao" type="radio" id="americanexpress" name="cartao__opcao" value="americanexpress">
                         <label for="americanexpress"><i class="fab fa-cc-amex"></i></label><br>
                     </div>
                     <div class= "cartao">
-                        <input class="cartao__opcao" type="radio" id="dinersclub" name="dinersclub" value="dinersclub">
+                        <input class="cartao__opcao" type="radio" id="dinersclub" name="cartao__opcao" value="dinersclub">
                         <label for="dinersclub"><i class="fab fa-cc-diners-club"></i></label><br>
                     </div>
                     <span class="erro" id="bandeira-cartao-vazio">Você deve selecionar um cartão.</span>
@@ -66,6 +66,7 @@
                     <label for="ano-validade">Ano de validade do cartão:</label>
                     <input class="form__campo-curto" type="text" id="ano-validade" name="ano-validade" maxlength="4" placeholder="Ex.: 2025"><br>
                     <span class="erro" id="ano-validade-vazio">Este campo deve ser preenchido.</span>
+                    <span class="erro" id="cartao-invalido">O cartão deve ter pelo menos mais 6 meses de validade.</span>
                 </div>
                 <div class="form__item">
                     <label for="codigo-seguranca">Código de segurança:</label>
@@ -175,6 +176,7 @@
         <footer class="footer">
             <p class="footer__p">Contato: contato@awesometickets.com.br</p>
         </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js/validacoes-informacoes-pagamento.js"></script>
     </body>
     </html>
