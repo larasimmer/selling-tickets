@@ -26,6 +26,7 @@ let erroBairroVazio = document.getElementById("bairro-vazio");
 let inputCidade = document.getElementById("cidade");
 let erroCidadeVazio = document.getElementById("cidade-vazio");
 let inputEstado = document.getElementById("estado");
+let erroEstadoVazio = document.getElementById("estado-vazio");
 
 let formularioDePagamento = document.getElementById("form-pagamento");
 
@@ -47,10 +48,11 @@ function realizaValidacoes(event) {
     let logradouroVazio = validaLogradouroVazio();
     let bairroVazio = validaBairroVazio();
     let cidadeVazio = validaCidadeVazio();
+    let estadoVazio = validaEstadoVazio();
 
     if (numeroDoCartaoVazio == true || anoDeValidadeVazio == true || cartaoInvalido == true || codigoDeSegurancaVazio == true || nomeDoTitularVazio == true ||
         dataDeNascimentoVazio == true || menorDeIdade == true || cpfVazio == true || cpfInvalido == true || telefoneVazio == true || cepVazio == true || 
-        logradouroVazio == true || bairroVazio == true || cidadeVazio == true) {
+        logradouroVazio == true || bairroVazio == true || cidadeVazio == true || estadoVazio == true) {
             return false;
             } else {
                 formularioDePagamento.submit();
@@ -383,5 +385,20 @@ function validaCidadeVazio() {
     }
 
     return cidadeVazio;
+}
+
+function validaEstadoVazio() {
+    let valorEstado = inputEstado.value;
+    let estadoVazio = false;
+
+    if (valorEstado.length <= 0) {
+        estadoVazio = true;
+        erroEstadoVazio.style.display = "block";
+    } else {
+        erroEstadoVazio.style.display = "none";
+        estadoVazio = false;
+    }
+
+    return estadoVazio;
 }
 

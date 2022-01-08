@@ -35,10 +35,6 @@
     &__validade--opcao {
         @extend %estilo-select-formulario;
     }
-
-    &__estado--opcao {
-        @extend %estilo-select-formulario;
-    }
 }
 
 .cartao {
