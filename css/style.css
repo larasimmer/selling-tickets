@@ -90,6 +90,7 @@
     padding-bottom: 1rem; }
 
 .footer {
+  margin-top: 10rem;
   background-color: #5c5a5a;
   height: 5rem;
   display: flex;
