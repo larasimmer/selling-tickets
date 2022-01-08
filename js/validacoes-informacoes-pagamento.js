@@ -28,25 +28,34 @@ let erroCidadeVazio = document.getElementById("cidade-vazio");
 let inputEstado = document.getElementById("estado");
 
 let formularioDePagamento = document.getElementById("form-pagamento");
-let botaoFinalizar = document.getElementById("botao-finalizar");
 
-botaoFinalizar.onclick = realizaValidacoes;
+formularioDePagamento.onsubmit = realizaValidacoes;
 
-function realizaValidacoes() {
-    validaNumeroDoCartaoVazio();
-    validaAnoDeValidadeVazio();
-    validaTempoDeValidadeDoCartao();
-    validaCodigoDeSegurancaVazio();
-    validaNomeDoTitularVazio();
-    validaDataDeNascimentoVazio();
-    validaMaioridadeDoTitular();
-    validaCpfVazio();
-    validaCalculoCpf();
-    validaTelefoneVazio();
-    validaCepVazio();
-    validaLogradouroVazio();
-    validaBairroVazio();
-    validaCidadeVazio();
+function realizaValidacoes(event) {
+    event.preventDefault();
+    let numeroDoCartaoVazio = validaNumeroDoCartaoVazio();
+    let anoDeValidadeVazio = validaAnoDeValidadeVazio();
+    let cartaoInvalido = validaTempoDeValidadeDoCartao();
+    let codigoDeSegurancaVazio = validaCodigoDeSegurancaVazio();
+    let nomeDoTitularVazio = validaNomeDoTitularVazio();
+    let dataDeNascimentoVazio = validaDataDeNascimentoVazio();
+    let menorDeIdade = validaMaioridadeDoTitular();
+    let cpfVazio = validaCpfVazio();
+    let cpfInvalido = validaCalculoCpf();
+    let telefoneVazio = validaTelefoneVazio();
+    let cepVazio = validaCepVazio();
+    let logradouroVazio = validaLogradouroVazio();
+    let bairroVazio = validaBairroVazio();
+    let cidadeVazio = validaCidadeVazio();
+
+    if (numeroDoCartaoVazio == true || anoDeValidadeVazio == true || cartaoInvalido == true || codigoDeSegurancaVazio == true || nomeDoTitularVazio == true ||
+        dataDeNascimentoVazio == true || menorDeIdade == true || cpfVazio == true || cpfInvalido == true || telefoneVazio == true || cepVazio == true || 
+        logradouroVazio == true || bairroVazio == true || cidadeVazio == true) {
+            return false;
+            } else {
+                formularioDePagamento.submit();
+            }
+        
 }
 
 //Validações de cartão de crédito
@@ -327,7 +336,6 @@ function completaEndereçoViaApi(data) {
     erroCidadeVazio.style.display = "none";
 
     inputEstado.value = data.uf;
-    console.log(inputEstado.value);
 }
 
 function validaLogradouroVazio() {

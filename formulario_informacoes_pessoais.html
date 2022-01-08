@@ -41,7 +41,7 @@
                     <input class="form__campo-medio" type="password" id="senha" name="senha" placeholder="Insira a sua senha de acesso"><br>
                     <span class="erro" id="senha-vazio">Este campo deve ser preenchido.</span>
                     <span class="erro" id="senha-invalida">A senha deve ter entre 8 a 12 caracteres, pelo menos uma letra minúscula,
-                        pelo menos uma letra minúscula e um número.</span>
+                        pelo menos uma letra minúscula e pelo menos um número.</span>
                     <span class="erro" id="senha-diferente">As senhas inseridas devem ser iguais.</span>
                 </div>
                 <div class="form__item inline-block">
@@ -49,26 +49,25 @@
                     <input class="form__campo-medio" type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirme a sua senha de acesso"><br>
                     <span class="erro" id="confirmar-senha-vazio">Este campo deve ser preenchido.</span>
                 </div>
+                <section class="resumo">
+                    <h3 class="resumo__titulo">Resumo da compra</h3>
+                    <div class="resumo__caixa">
+                        <ul class="resumo__lista">
+                            <li class="resumo__lista-item">
+                            <h3>[Nome do evento]</h3>
+                            <h5>[Data e horário do evento]</h5>
+                            <h5>[Local do evento]</h5>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 class="resumo__total">Total: [total da compra]</h3>
+                    <button type="submit" class="resumo__botao" id="botao-avancar">Avançar para o pagamento</button>
+                </section>
             </form>
-            <section class="resumo">
-                <h3 class="resumo__titulo">Resumo da compra</h3>
-                <div class="resumo__caixa">
-                    <ul class="resumo__lista">
-                        <li class="resumo__lista-item">
-                        <h3>[Nome do evento]</h3>
-                        <h5>[Data e horário do evento]</h5>
-                        <h5>[Local do evento]</h5>
-                        </li>
-                    </ul>
-                </div>
-                <h3 class="resumo__total">Total: [total da compra]</h3>
-                <a href="formulario_pagamento.html"><button class="resumo__botao" id="botao-avancar">Avançar para o pagamento</button></a>
-            </section>
         </main>
         <footer class="footer">
             <p class="footer__p">Contato: contato@awesometickets.com.br</p>
         </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js/validacoes-informacoes-pessoais.js"></script>
     </body>
     </html>
